@@ -1,0 +1,30 @@
+<div class="container-fluid bg-light bg-ac shadow py-3">
+  <div class="d-flex align-items-center">
+    {{#link-to "index" class="text-body mr-3"}} {{fa-icon "chevron-left"}} {{/link-to}}
+    <h1 class="mb-0">Settings</h1>
+  </div>
+</div>
+
+<div class="container-fluid mt-4">
+  <div class="alert alert-info">
+    <div class="d-flex align-items-center">
+      {{fa-icon "info-circle"}}
+      <p class="mb-0 ml-2">Changes are saved immediately.</p>
+    </div>
+  </div>
+  <form class="form">
+    <div class="form-group">
+      <label for="hemisphere">Hemisphere</label>
+      <select name="hemisphere" id="hemisphere" onchange={{action "selectHemisphere" value="target.value"}} class="form-control">
+        <option value="northern" selected={{if (eq settings.hemisphere "northern") "selected"}}>Northern</option>
+        <option value="southern" selected={{if (eq settings.hemisphere "southern") "selected"}}>Southern</option>
+      </select>
+    </div>
+  </form>
+</div>
+
+<hr class="my-5">
+
+<p class="text-muted text-center">&copy; Moppler 2020</p>
+
+{{outlet}}

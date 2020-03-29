@@ -1,0 +1,26 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.bg-ac {
+  // position: relative;
+  background-image: url('/assets/new-horisons.png');
+}
+
+// .bg-ac:before {
+//   content: ' ';
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   opacity: .5;
+//   background-image: url('/assets/new-horisons.png');
+// }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
