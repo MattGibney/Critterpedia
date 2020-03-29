@@ -20,6 +20,17 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    firebase: {
+      apiKey: "AIzaSyAA-a8fxSQXOVf2G1D_VXQxGUp5xtbsSJM",
+      authDomain: "critterpedia-moppler.firebaseapp.com",
+      databaseURL: "https://critterpedia-moppler.firebaseio.com",
+      projectId: "critterpedia-moppler",
+      storageBucket: "critterpedia-moppler.appspot.com",
+      messagingSenderId: "690320825597",
+      appId: "1:690320825597:web:c81c693fabcf6df390b294",
+      measurementId: "G-VWS6KN8NGX"
     }
   };
 
