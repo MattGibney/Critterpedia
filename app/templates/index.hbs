@@ -31,25 +31,13 @@
   <thead>
     <tr>
       <th>Name</th>
-      {{!-- <th>Price</th> --}}
       <th>Location</th>
       <th>Time</th>
     </tr>
   </thead>
   <tbody>
-    {{#each availableCritters as |fish|}}
-      <tr>
-        <td>{{fish.name}}</td>
-        {{!-- <td>{{fish.price}}</td> --}}
-        <td>{{fish.location}}</td>
-        <td>
-          {{#if fish.time}}
-            {{moment-format (concat "2020-01-01T" fish.time.start ":00:00") "h a"}} - {{moment-format (concat "2020-01-01T" fish.time.end ":00:00") "h a"}}
-          {{else}}
-            All Day
-          {{/if}}
-        </td>
-      </tr>
+    {{#each availableCritters as |critter|}}
+      {{critter-table-row critter=critter}}
     {{/each}}
   </tbody>
 </table>
