@@ -35,11 +35,9 @@
       <th>Time</th>
     </tr>
   </thead>
-  <tbody>
-    {{#each availableCritters as |critter|}}
-      {{critter-table-row critter=critter}}
-    {{/each}}
-  </tbody>
+  {{#each availableCritters as |critter|}}
+    {{critter-table-row critter=critter currentTime=currentTime hemisphere=settings.hemisphere}}
+  {{/each}}
 </table>
 
 {{outlet}}
