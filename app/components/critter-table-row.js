@@ -3,9 +3,8 @@ import { computed } from '@ember/object';
 
 export default Component.extend({
   tagName: 'tbody',
-  // classNameBindings: ['expiresSoon:table-warning'],
   
-  expiresSoon: computed('critter', 'currentTime.month', 'hemisphere', function() {
+  expiresSoon: computed('critter.months', 'currentTime.month', 'hemisphere', function() {
     let nextMonth = this.get('currentTime.month') + 1;
     if(nextMonth > 11) {
       nextMonth = 0;
