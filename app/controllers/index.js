@@ -26,7 +26,7 @@ export default Controller.extend({
   }),
 
   availableCritters: computed('critterType', 'critterTime', 'currentTime.{month,hour}', 'settings.hemisphere', function() {
-    return this.get('model')[this.get('critterType')].filter(f => {
+    return this.get('model').filterBy('type', this.get('critterType')).filter(f => {
 
       if(f.months[this.get('settings.hemisphere')].includes(this.get('currentTime.month'))) {
         if(!f.time || this.get('critterTime') === 'month') {
@@ -39,7 +39,7 @@ export default Controller.extend({
 
         // Same Day
         if(startTime < endTime) {
-          if(this.get('currentTime.hour') >= startTime && this.get('currentTime.hour') <= endTime) {
+          if(this.get('currentTime.hour') >= startTime && this.get('currentTime.hour') < endTime) {
             return true;
           }
           return false;

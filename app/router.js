@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('settings');
+  this.route('critter', { path: '/critter/:critter_name' });
 });
 
 export default Router;

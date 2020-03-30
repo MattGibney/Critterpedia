@@ -7,19 +7,18 @@ module('Unit | Controller | index', function(hooks) {
 
   // Replace this with your real tests.
   test('Computed: availableCritters in Month', function(assert) {
-    const mockModel = EmberObject.create({
-      fish: [
-        {
-          name:' Bitterling',
-          price:' 900',
-          location:' River',
-          months: {
-            northern: [1],
-            southern: [2]
-          }
+    const mockModel = [
+      {
+        type: 'fish',
+        name:' Bitterling',
+        price:' 900',
+        location:' River',
+        months: {
+          northern: [1],
+          southern: [2]
         }
-      ]
-    });
+      }
+    ];
 
     const mockTime = EmberObject.create({
       month: 1,
@@ -48,9 +47,9 @@ module('Unit | Controller | index', function(hooks) {
   });
 
   test('Computed: availableCritters in Month in Time in Day', function(assert) {
-    const mockModel = EmberObject.create({
-      fish: [
+    const mockModel = [
         {
+          type: 'fish',
           name:' Bitterling',
           price:' 900',
           location:' River',
@@ -63,8 +62,7 @@ module('Unit | Controller | index', function(hooks) {
             southern: [2]
           }
         }
-      ]
-    });
+      ];
 
     const mockTime = EmberObject.create({
       month: 1,
@@ -98,7 +96,7 @@ module('Unit | Controller | index', function(hooks) {
       { hour: 13, shouldBe: 1 },
       { hour: 14, shouldBe: 1 },
       { hour: 15, shouldBe: 1 },
-      { hour: 16, shouldBe: 1 },
+      { hour: 16, shouldBe: 0 },
       { hour: 17, shouldBe: 0 },
       { hour: 18, shouldBe: 0 },
       { hour: 19, shouldBe: 0 },
@@ -113,9 +111,9 @@ module('Unit | Controller | index', function(hooks) {
   });
 
   test('Computed: availableCritters in Month in Time over Day', function(assert) {
-    const mockModel = EmberObject.create({
-      fish: [
+    const mockModel = [
         {
+          type: 'fish',
           name:' Bitterling',
           price:' 900',
           location:' River',
@@ -128,8 +126,7 @@ module('Unit | Controller | index', function(hooks) {
             southern: [2]
           }
         }
-      ]
-    });
+      ];
 
     const mockTime = EmberObject.create({
       month: 1,
