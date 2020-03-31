@@ -5,6 +5,10 @@ $theme-colors: (
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+.colour-twitter {
+  color: #20A1F3;
+}
+
 .bg-ac {
   background-image: url('/assets/new-horisons.png');
 }
