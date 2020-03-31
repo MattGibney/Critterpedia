@@ -4,14 +4,30 @@ import { computed } from '@ember/object';
 export default Component.extend({
   tagName: 'tbody',
   
-  expiresSoon: computed('critter.months', 'currentTime.month', 'hemisphere', function() {
+  expiresSoon: computed('critter.months', 'currentTime.{month,day}', 'hemisphere', function() {
     let nextMonth = this.get('currentTime.month') + 1;
     if(nextMonth > 11) {
       nextMonth = 0;
     }
 
     if(!this.get('critter.months')[this.get('hemisphere')].includes(nextMonth)) {
-      return true;
+      if(this.get('currentTime.day') > 15) {
+        return true;
+      }
+    }
+    return false;
+  }),
+
+  newCritter: computed('critter.months', 'currentTime.{month,day}', 'hemisphere', function() {
+    let nextMonth = this.get('currentTime.month') - 1;
+    if(nextMonth < 0) {
+      nextMonth = 11;
+    }
+
+    if(!this.get('critter.months')[this.get('hemisphere')].includes(nextMonth)) {
+      if(this.get('currentTime.day') <= 15) {
+        return true;
+      }
     }
     return false;
   })

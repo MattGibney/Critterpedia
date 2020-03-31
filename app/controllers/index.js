@@ -20,6 +20,7 @@ export default Controller.extend({
   currentTime: computed('date', function() {
     const today = this.get('date');
     return {
+      day: today.getDate(),
       month: today.getMonth(),
       hour: today.getHours()
     }

@@ -11,7 +11,12 @@
 </tr>
 {{#if expiresSoon}}
   <tr>
-    <td colspan="3" class="border-top-0 text-warning">{{fa-icon "exclamation-triangle"}} This critter is not available next month!</td>
+    <td colspan="3" class="border-top-0 pt-0 text-warning">{{fa-icon "exclamation-triangle"}} This critter is not available next month!</td>
+  </tr>
+{{/if}}
+{{#if newCritter}}
+  <tr>
+    <td colspan="3" class="border-top-0 pt-0 text-info">{{fa-icon "badge" prefix="fal"}} This critter is newly available this month!</td>
   </tr>
 {{/if}}
 {{yield}}
