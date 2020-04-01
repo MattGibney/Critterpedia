@@ -1628,7 +1628,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         type: 'fish',
         name: 'Clownfish',
         price: '650',
-        location: 'Oeacean',
+        location: 'Sea',
         months: {
           northern: [3, 4, 5, 6, 7, 8],
           southern: [9, 10, 11, 0, 1, 2]
