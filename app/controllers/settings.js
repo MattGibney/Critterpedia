@@ -4,9 +4,12 @@ import { inject as service } from '@ember/service';
 
 export default Controller.extend({
   settings: service('settings'),
+  firebaseApp: service('firebase-app'),
 
   actions: {
-    selectHemisphere(hemisphere) {
+    async selectHemisphere(hemisphere) {
+      const analytics = await this.get('firebaseApp').analytics();
+      analytics.logEvent("settings_hemisphere", { changeTo: hemisphere });
       this.set('settings.hemisphere', hemisphere);
     }
   }

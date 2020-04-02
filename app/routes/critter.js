@@ -1,8 +1,17 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
 export default Route.extend({
+  firebaseApp: service('firebase-app'),
+
   async model(params) {
-    return await this.modelFor('application').findBy('name', params.critter_name);
+    const critter = await this.modelFor('application').findBy('name', params.critter_name);
+
+    const analytics = await this.get('firebaseApp').analytics();
+    analytics.logEvent("view_critter", { name: critter.name });
+
+
+    return critter
   },
 
   afterModel(model) {

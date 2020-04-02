@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 
 export default Controller.extend({
   settings: service('settings'),
+  firebaseApp: service('firebase-app'),
 
   critterType: 'fish',
   critterTime: 'now',
@@ -56,7 +57,14 @@ export default Controller.extend({
   }),
 
   actions: {
-    changeCritterType(type) {
+    async changeCritterType(type) {
+      const analytics = await this.get('firebaseApp').analytics();
+
+      if(type === 'fish') {
+        analytics.logEvent("view_fish");
+      } else {
+        analytics.logEvent("view_insects");
+      }
       return this.set('critterType', type);
     },
     changeCritterTime(time) {
