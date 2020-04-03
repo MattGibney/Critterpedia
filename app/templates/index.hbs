@@ -33,12 +33,12 @@
 <table class="table">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Location</th>
-      <th>Time</th>
+      <th {{action "sortBy" "name"}}>Name <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "location"}}>Location <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "time"}}>Time <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
     </tr>
   </thead>
-  {{#each availableCritters as |critter|}}
+  {{#each sortedCritters as |critter|}}
     {{critter-table-row critter=critter currentTime=currentTime hemisphere=settings.hemisphere}}
   {{/each}}
 </table>

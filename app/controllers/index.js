@@ -9,6 +9,9 @@ export default Controller.extend({
   critterType: 'fish',
   critterTime: 'now',
 
+  sortBy: 'name',
+  sortDir: 'asc',
+
   init() {
     this._super(...arguments);
     this.set('date', new Date());
@@ -56,6 +59,14 @@ export default Controller.extend({
     });
   }),
 
+  sortedCritters: computed('availableCritters.[]', 'sortBy', 'sortDir', function () {
+    const critters = this.get('availableCritters').sortBy(this.get('sortBy'));
+    if(this.get('sortDir') === 'desc') {
+      critters.reverse();
+    }
+    return critters;
+  }),
+
   actions: {
     async changeCritterType(type) {
       const analytics = await this.get('firebaseApp').analytics();
@@ -69,6 +80,14 @@ export default Controller.extend({
     },
     changeCritterTime(time) {
       return this.set('critterTime', time);
+    },
+    sortBy(sortColumn) {
+      if(this.get('sortDir') === 'desc') {
+        this.set('sortDir', 'asc');
+      }else{
+        this.set('sortDir', 'desc');
+      }
+      return this.set('sortBy', sortColumn);
     }
   }
 });
