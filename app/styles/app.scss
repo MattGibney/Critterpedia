@@ -73,3 +73,10 @@ h1 {
 .footer {
   height: 50px;
 }
+
+.table-narrow {
+  td, th {
+    padding-left: .25rem;
+    padding-right: .25rem;
+  }
+}

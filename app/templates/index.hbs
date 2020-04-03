@@ -30,11 +30,12 @@
   </div> --}}
 </div>
 
-<table class="table">
+<table class="table table-narrow">
   <thead>
     <tr>
       <th {{action "sortBy" "name"}} role="button">Name <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
       <th {{action "sortBy" "location"}} role="button">Location <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "price"}} role="button">Price <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
       <th {{action "sortBy" "time"}} role="button">Time <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
     </tr>
   </thead>
