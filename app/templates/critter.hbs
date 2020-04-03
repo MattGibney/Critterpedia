@@ -12,17 +12,19 @@
   <div class="row">
     <div class="col-12 col-sm-6">
       <table class="table table-borderless">
-        {{!-- <tr>
-          <td>Critter Type</td>
-          <td class="font-weight-bold">{{model.type}}</td>
-        </tr> --}}
-        {{!-- <tr>
-          <td>Price</td>
-          <td class="font-weight-bold">{{model.price}} bells</td>
-        </tr> --}}
         <tr>
           <td>Location</td>
           <td class="font-weight-bold">{{model.location}}</td>
+        </tr>
+        <tr>
+          <td>Apperance Frequency</td>
+          <td class="font-weight-bold">
+            {{#if model.isRare}}
+              <span class="text-danger">Rare, it may be more difficult to catch than normal.</span>
+            {{else}}
+              <span class="text-success">Common, you should have no trouble catching these.</span>
+            {{/if}}
+          </td>
         </tr>
       </table>
     </div>
