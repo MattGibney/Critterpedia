@@ -1,5 +1,6 @@
 import Service from '@ember/service';
 
 export default Service.extend({
-  hemisphere: 'northern'
+  hemisphere: 'northern',
+  flickPrices: false
 });

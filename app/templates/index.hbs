@@ -35,7 +35,7 @@
     </tr>
   </thead>
   {{#each sortedCritters as |critter|}}
-    {{critter-table-row critter=critter currentTime=currentTime hemisphere=settings.hemisphere}}
+    {{critter-table-row critter=critter currentTime=currentTime hemisphere=settings.hemisphere flickPrices=settings.flickPrices}}
   {{/each}}
 </table>
 

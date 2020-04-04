@@ -3,6 +3,13 @@ import { computed } from '@ember/object';
 
 export default Component.extend({
   tagName: 'tbody',
+
+  critterPrice: computed('critter.price', 'flickPrices', function() {
+    if(this.get('flickPrices')) {
+      return this.get('critter.price') * 1.5;
+    }
+    return this.get('critter.price');
+  }),
   
   expiresSoon: computed('critter.months', 'currentTime.{month,day}', 'hemisphere', function() {
     let nextMonth = this.get('currentTime.month') + 1;

@@ -1,7 +1,7 @@
 <tr>
   <td>{{link-to critter.name "critter" critter.name}}</td>
   <td>{{critter.location}}</td>
-  <td>{{format-number critter.price}}</td>
+  <td>{{format-number critterPrice}}</td>
   <td>
     {{#if critter.time}}
       {{moment-format (concat "2020-01-01T" critter.time.start ":00:00") "ha"}} {{t "time.seperator"}} {{moment-format (concat "2020-01-01T" critter.time.end ":00:00") "ha"}}
