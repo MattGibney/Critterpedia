@@ -5,6 +5,13 @@ import { inject as service } from '@ember/service';
 export default Controller.extend({
   settings: service('settings'),
 
+  critterPrice: computed('model.price', 'settings.flickPrices', function() {
+    if(this.get('settings.flickPrices')) {
+      return this.get('model.price') * 1.5;
+    }
+    return this.get('model.price');
+  }),
+
   activeMonths: computed('model.months.[]', 'settings.hemisphere', function() {
     const critterMonths = this.get('model.months')[this.get('settings.hemisphere')];
     return [
