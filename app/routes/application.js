@@ -17,7 +17,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Common Butterfly',
         price: 160,
-        location: 'Above Flowers',
+        location: 'Flying',
         time: {
           start: '04',
           end: '19'
@@ -242,7 +242,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Long Locust',
         price: 200,
-        location: 'In Grass',
+        location: 'Grass',
         time: {
           start: '08',
           end: '19'
@@ -257,7 +257,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Migratory Locust',
         price: 600,
-        location: 'In Grass',
+        location: 'Grass',
         time: {
           start: '08',
           end: '19'
@@ -272,7 +272,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Rice Grasshopper',
         price: 160,
-        location: 'In Grass',
+        location: 'Grass',
         time: {
           start: '08',
           end: '19'
@@ -287,7 +287,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Grasshopper',
         price: 160,
-        location: 'In Grass',
+        location: 'Grass',
         time: {
           start: '08',
           end: '17'
@@ -302,7 +302,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Cricket',
         price: 130,
-        location: 'In Grass',
+        location: 'Grass',
         time: {
           start: '17',
           end: '08'
@@ -317,7 +317,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Bell Cricket',
         price: 430,
-        location: 'In Grass',
+        location: 'Grass',
         time: {
           start: '17',
           end: '08'
@@ -332,7 +332,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Mantis',
         price: 430,
-        location: 'On Flowers',
+        location: 'Flowers',
         time: {
           start: '08',
           end: '17'
@@ -347,7 +347,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Orchid Mantis',
         price: 2400,
-        location: 'On Flowers',
+        location: 'Flowers',
         time: {
           start: '08',
           end: '17'
@@ -530,7 +530,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Firefly',
         price: 300,
-        location: 'Above Freshwater',
+        location: 'Rivers and Ponds',
         time: {
           start: '19',
           end: '04'
@@ -556,7 +556,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Pondskater',
         price: 130,
-        location: 'In Rivers',
+        location: 'Rivers',
         time: {
           start: '08',
           end: '19'
@@ -571,7 +571,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Diving Beetle',
         price: 800,
-        location: 'In Rivers',
+        location: 'Rivers',
         time: {
           start: '08',
           end: '19'
@@ -586,7 +586,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Giant Water Bug',
         price: 2000,
-        location: 'On Ponds and Rivers',
+        location: 'Rivers and Ponds',
         time: {
           start: '19',
           end: '08'
@@ -601,7 +601,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Stinkbug',
         price: 120,
-        location: 'On Flowers',
+        location: 'Flowers',
         months: {
           northern: [2, 3, 4, 5, 6, 7, 8, 9],
           southern: [8, 9, 10, 11, 0, 1, 2, 3]
@@ -612,7 +612,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Man-faced Stink Bug',
         price: 1000,
-        location: 'On Flowers',
+        location: 'Flowers',
         time: {
           start: '19',
           end: '08'
@@ -627,7 +627,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Ladybug',
         price: 200,
-        location: 'On Flowers',
+        location: 'Flowers',
         time: {
           start: '08',
           end: '17'
@@ -664,7 +664,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Citrus Long-horned Beetle',
         price: 350,
-        location: 'On Tree Stumps',
+        location: 'Tree Stumps',
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -675,7 +675,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: true,
         name: 'Rosalia Batesi Beetle',
         price: 3000,
-        location: 'On Tree Stumps',
+        location: 'Tree Stumps',
         months: {
           northern: [4, 5, 6, 7, 8],
           southern: [10, 11, 0, 1, 2]
@@ -708,7 +708,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Dung Beetle',
         price: 3000,
-        location: 'On Ground',
+        location: 'Ground',
         months: {
           northern: [11, 0, 1],
           southern: [5, 6, 7]
@@ -719,7 +719,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Earth-boring Dung Beetle',
         price: 300,
-        location: 'On Ground',
+        location: 'Ground',
         months: {
           northern: [6, 7, 8],
           southern: [0, 1, 2]
@@ -943,7 +943,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Walking Leaf',
         price: 600,
-        location: 'On Ground (Beneath Trees)',
+        location: 'Ground Beneath Trees',
         months: {
           northern: [6, 7, 8],
           southern: [0, 1, 2]
@@ -954,7 +954,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Bagworm',
         price: 600,
-        location: 'On Trees',
+        location: 'Shaking Trees',
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -965,7 +965,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Ant',
         price: 80,
-        location: 'On Rotten Turnips and Fruit',
+        location: 'Rotten Turnips and Fruit',
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -976,7 +976,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Hermit Crab',
         price: 1000,
-        location: 'On Beach',
+        location: 'Beach',
         time: {
           start: '19',
           end: '08'
@@ -991,7 +991,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Wharf Roach',
         price: 200,
-        location: 'On Beach (Rocks)',
+        location: 'Beach Rocks',
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -1002,7 +1002,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: true,
         name: 'Fly',
         price: 60,
-        location: 'On Rotten Food and Garbage',
+        location: 'Rotten Food and Garbage',
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
@@ -1095,7 +1095,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: true,
         name: 'Tarantula',
         price: 8000,
-        location: 'On Ground',
+        location: 'Ground',
         time: {
           start: '19',
           end: '04'
@@ -1110,7 +1110,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: true,
         name: 'Scorpion',
         price: 8000,
-        location: 'On Ground',
+        location: 'Ground',
         time: {
           start: '19',
           end: '04'
@@ -1455,7 +1455,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Cherry Salmon',
         price: 1000,
-        location: 'River (Clifftop)',
+        location: 'River (Cliff)',
         time: {
           start: '16',
           end: '09'
@@ -1470,7 +1470,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Char',
         price: 3800,
-        location: 'River (Clifftop)',
+        location: 'River (Cliff)',
         time: {
           start: '16',
           end: '09'
@@ -1485,7 +1485,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Golden Trout',
         price: 15000,
-        location: 'River (Clifftop)',
+        location: 'River (Cliff)',
         time: {
           start: '16',
           end: '09'
@@ -1500,7 +1500,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'Stringfish',
         price: 15000,
-        location: 'River (Clifftop)',
+        location: 'River (Cliff)',
         time: {
           start: '16',
           end: '09'
@@ -2146,7 +2146,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: true,
         name: 'Coelacanth',
         price: 15000,
-        location: 'Sea (Rainy Days)',
+        location: 'Sea (Rain)',
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]

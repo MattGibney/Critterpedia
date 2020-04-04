@@ -30,8 +30,8 @@
     <tr>
       <th {{action "sortBy" "name"}} role="button">{{t "critterList.column.name"}} <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
       <th {{action "sortBy" "location"}} role="button">{{t "critterList.column.location"}} <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "price"}} role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "time"}} role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "price"}}  style="min-width: 72px;"  role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "time"}} style="min-width: 95px;" role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
     </tr>
   </thead>
   {{#each sortedCritters as |critter|}}
