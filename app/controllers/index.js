@@ -6,6 +6,8 @@ export default Controller.extend({
   settings: service('settings'),
   firebaseApp: service('firebase-app'),
 
+  monthOverride: null,
+
   critterType: 'fish',
   critterTime: 'now',
 
@@ -21,13 +23,19 @@ export default Controller.extend({
     // }, 500);
   },
 
-  currentTime: computed('date', function() {
+  currentTime: computed('date', 'monthOverride', function() {
     const today = this.get('date');
-    return {
+    const timeObj = {
       day: today.getDate(),
       month: today.getMonth(),
       hour: today.getHours()
     }
+
+    if(this.get('monthOverride')) {
+      timeObj.month = parseInt(this.get('monthOverride'));
+    }
+
+    return timeObj;
   }),
 
   availableCritters: computed('critterType', 'critterTime', 'currentTime.{month,hour}', 'settings.hemisphere', function() {
@@ -79,6 +87,9 @@ export default Controller.extend({
       return this.set('critterType', type);
     },
     changeCritterTime(time) {
+      if(time === "now") {
+        this.set('monthOverride', null);
+      }
       return this.set('critterTime', time);
     },
     sortBy(sortColumn) {
@@ -88,6 +99,10 @@ export default Controller.extend({
         this.set('sortDir', 'desc');
       }
       return this.set('sortBy', sortColumn);
+    },
+    changeMonth(month) {
+      this.set('critterTime', 'month');
+      return this.set('monthOverride', month);
     }
   }
 });

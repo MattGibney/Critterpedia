@@ -18,9 +18,32 @@
 <div class="container-fluid">
   <div class="my-3">
     <p>{{t "critterList.filter.heading"}}:</p>
-    <div class="btn-group d-flex" role="group">
-      <button type="button" class="btn btn-outline-secondary {{if (eq critterTime "month") "active"}}" {{action "changeCritterTime" "month"}}>{{t "critterList.filter.thisMonth"}}</button>
-      <button type="button" class="btn btn-outline-secondary {{if (eq critterTime "now") "active"}}" {{action "changeCritterTime" "now"}}>{{t "critterList.filter.rightNow"}}</button>
+    <div class="row no-gutters">
+      <div class="col pr-1">
+        <div class="btn-group d-flex" role="group">
+          <button type="button" class="btn btn-outline-secondary w-100 {{if (eq critterTime "month") "active"}}" {{action "changeCritterTime" "month"}} >{{t (concat "month." currentTime.month)}}</button>
+          <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split {{if (eq critterTime "month") "active"}}" data-toggle="dropdown">
+            <span class="sr-only">{{t "toggleDropdown"}}</span>
+          </button>
+          <div class="dropdown-menu">
+            <button class="dropdown-item" type="button" {{action "changeMonth" "0"}}>{{t "month.0"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "1"}}>{{t "month.1"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "2"}}>{{t "month.2"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "3"}}>{{t "month.3"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "4"}}>{{t "month.4"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "5"}}>{{t "month.5"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "6"}}>{{t "month.6"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "7"}}>{{t "month.7"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "8"}}>{{t "month.8"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "9"}}>{{t "month.9"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "10"}}>{{t "month.10"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "11"}}>{{t "month.11"}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="col pl-1">
+        <button type="button" class="btn btn-outline-secondary btn-block {{if (eq critterTime "now") "active"}}" {{action "changeCritterTime" "now"}}>{{t "critterList.filter.rightNow"}}</button>
+      </div>
     </div>
   </div>
 </div>
@@ -30,8 +53,8 @@
     <tr>
       <th {{action "sortBy" "name"}} role="button">{{t "critterList.column.name"}} <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
       <th {{action "sortBy" "location"}} role="button">{{t "critterList.column.location"}} <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "price"}}  style="min-width: 72px;"  role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "time"}} style="min-width: 95px;" role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "price"}} class="min-w-75-px" role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "time"}} class="min-w-100-px" role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
     </tr>
   </thead>
   {{#each sortedCritters as |critter|}}
