@@ -1,23 +1,23 @@
 <tr>
   <td>{{link-to critter.name "critter" critter.name}}</td>
   <td>{{critter.location}}</td>
-  <td>{{critter.price}}</td>
+  <td>{{format-number critter.price}}</td>
   <td>
     {{#if critter.time}}
-      {{moment-format (concat "2020-01-01T" critter.time.start ":00:00") "ha"}} - {{moment-format (concat "2020-01-01T" critter.time.end ":00:00") "ha"}}
+      {{moment-format (concat "2020-01-01T" critter.time.start ":00:00") "ha"}} {{t "time.seperator"}} {{moment-format (concat "2020-01-01T" critter.time.end ":00:00") "ha"}}
     {{else}}
-      All Day
+      {{t "time.allDay"}}
     {{/if}}
   </td>
 </tr>
 {{#if expiresSoon}}
   <tr>
-    <td colspan="3" class="border-top-0 pt-0 text-warning">{{fa-icon "exclamation-triangle"}} This critter is not available next month!</td>
+    <td colspan="3" class="border-top-0 pt-0 text-warning">{{fa-icon "exclamation-triangle"}} {{t "critterOutSeason"}}</td>
   </tr>
 {{/if}}
 {{#if newCritter}}
   <tr>
-    <td colspan="3" class="border-top-0 pt-0 text-info">{{fa-icon "badge" prefix="fal"}} This critter is newly available this month!</td>
+    <td colspan="3" class="border-top-0 pt-0 text-info">{{fa-icon "badge" prefix="fal"}} {{t "critterInSeason"}}</td>
   </tr>
 {{/if}}
 {{yield}}

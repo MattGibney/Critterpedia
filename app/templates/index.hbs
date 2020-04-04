@@ -4,13 +4,12 @@
 <div class="container-fluid bg-light bg-ac shadow py-3">
   <div class="d-flex justify-content-between align-items-center">
     <div class="btn-group" role="group">
-      <button type="button" class="btn btn-secondary {{if (eq critterType "fish") "active"}}" {{action "changeCritterType" "fish"}}>Fish</button>
-      <button type="button" class="btn btn-secondary {{if (eq critterType "insect") "active"}}" {{action "changeCritterType" "insect"}}>Insects</button>
+      <button type="button" class="btn btn-secondary {{if (eq critterType "fish") "active"}}" {{action "changeCritterType" "fish"}}>{{t "critterList.switcher.fish"}}</button>
+      <button type="button" class="btn btn-secondary {{if (eq critterType "insect") "active"}}" {{action "changeCritterType" "insect"}}>{{t "critterList.switcher.insects"}}</button>
     </div>
     <div>
       <div class="btn-group" role="group">
         {{#link-to "settings" class="btn btn-outline-secondary"}} {{fa-icon "cog" prefix="fas"}} {{/link-to}}
-        {{!-- <button type="button" class="btn btn-outline-secondary">{{fa-icon "cog" prefix="fas"}}</button> --}}
       </div>
     </div>
   </div>
@@ -18,25 +17,21 @@
 
 <div class="container-fluid">
   <div class="my-3">
-    <p>Show Critters I can catch:</p>
-    <div class="btn-group d-flex" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-outline-secondary {{if (eq critterTime "month") "active"}}" {{action "changeCritterTime" "month"}}>This Month</button>
-      <button type="button" class="btn btn-outline-secondary {{if (eq critterTime "now") "active"}}" {{action "changeCritterTime" "now"}}>Right Now</button>
+    <p>{{t "critterList.filter.heading"}}:</p>
+    <div class="btn-group d-flex" role="group">
+      <button type="button" class="btn btn-outline-secondary {{if (eq critterTime "month") "active"}}" {{action "changeCritterTime" "month"}}>{{t "critterList.filter.thisMonth"}}</button>
+      <button type="button" class="btn btn-outline-secondary {{if (eq critterTime "now") "active"}}" {{action "changeCritterTime" "now"}}>{{t "critterList.filter.rightNow"}}</button>
     </div>
   </div>
-  {{!-- <div class="d-flex justify-content-between my-3">
-    <div>{{moment-format date "MMMM Do h:mm a"}}</div>
-    <div>{{hemisphere}}</div>
-  </div> --}}
 </div>
 
 <table class="table table-narrow">
   <thead>
     <tr>
-      <th {{action "sortBy" "name"}} role="button">Name <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "location"}} role="button">Location <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "price"}} role="button">Price <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "time"}} role="button">Time <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "name"}} role="button">{{t "critterList.column.name"}} <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "location"}} role="button">{{t "critterList.column.location"}} <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "price"}} role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      <th {{action "sortBy" "time"}} role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
     </tr>
   </thead>
   {{#each sortedCritters as |critter|}}

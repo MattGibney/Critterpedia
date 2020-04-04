@@ -1,0 +1,56 @@
+{
+  "twitterHandle": "@findmoppler",
+  "time": {
+    "seperator": "-",
+    "allDay": "All Day"
+  },
+  "bells": "bells",
+  "critterInSeason": "This critter is newly available this month!",
+  "critterOutSeason": "This critter is not available next month!",
+  "critterList": {
+    "switcher": {
+      "fish": "Fish",
+      "insects": "Insects"
+    },
+    "filter": {
+      "heading": "Show Critters I can catch",
+      "thisMonth": "This Month",
+      "rightNow": "Right Now"
+    },
+    "column": {
+      "name": "Name",
+      "location": "Location",
+      "price": "Price",
+      "time": "Time"
+    }
+  },
+  "settings": {
+    "heading": "Settings",
+    "changesSavedAlert": "Changes are saved immediately.",
+    "hemisphere": {
+      "label": "Hemisphere",
+      "options": {
+        "northern": "Northern",
+        "southern": "Southern"
+      }
+    },
+    "thankYou": "Thank you very much for using my site. If you have any feedback or suggestions for improvement, I'd appreciate it. Please do not hesitate to contact me on twitter and share this with your friends.",
+    "translations": "<strong>Are you multi-lingual?</strong> I'd like to translate this app to support different languages. If you are interested in helping to make this app multi-lingual, please get in touch!"
+  },
+  "critter": {
+    "dataPoint": {
+      "location": "Location",
+      "price": "Price",
+      "frequency": "Apperance Frequency"
+    },
+    "rareCritter": "Rare, it may be more difficult to catch than normal.",
+    "commonCritter": "Common, you should have no trouble catching these.",
+    "activeHours": "Active Hours",
+    "activeTime": {
+      "12am": "12am",
+      "12pm": "12pm",
+      "6": "6"
+    },
+    "seasonality": "Seasonality"
+  }
+}

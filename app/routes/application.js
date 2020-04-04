@@ -1,7 +1,15 @@
 import Route from '@ember/routing/route';
 import AnalyticsRouteMixin from 'emberfire/mixins/analytics-route';
+import { inject as service } from '@ember/service';
 
 export default Route.extend(AnalyticsRouteMixin, {
+  intl: service(),
+  
+  beforeModel() {
+    this._super(...arguments);
+    return this.intl.setLocale(['en-us']);
+  },
+
   model() {
     return [
       {

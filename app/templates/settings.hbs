@@ -3,7 +3,7 @@
 <div class="container-fluid bg-light bg-ac shadow py-3">
   <div class="d-flex align-items-center">
     {{#link-to "index" class="text-body mr-3"}} {{fa-icon "chevron-left"}} {{/link-to}}
-    <h1 class="mb-0">Settings</h1>
+    <h1 class="mb-0">{{t "settings.heading"}}</h1>
   </div>
 </div>
 
@@ -11,15 +11,15 @@
   <div class="alert alert-info">
     <div class="d-flex align-items-center">
       {{fa-icon "info-circle"}}
-      <p class="mb-0 ml-2">Changes are saved immediately.</p>
+      <p class="mb-0 ml-2">{{t "settings.changesSavedAlert"}}</p>
     </div>
   </div>
   <form class="form">
     <div class="form-group">
-      <label for="hemisphere">Hemisphere</label>
+      <label for="hemisphere">{{t "settings.hemisphere.label"}}</label>
       <select name="hemisphere" id="hemisphere" onchange={{action "selectHemisphere" value="target.value"}} class="form-control">
-        <option value="northern" selected={{if (eq settings.hemisphere "northern") "selected"}}>Northern</option>
-        <option value="southern" selected={{if (eq settings.hemisphere "southern") "selected"}}>Southern</option>
+        <option value="northern" selected={{if (eq settings.hemisphere "northern") "selected"}}>{{t "settings.hemisphere.options.northern"}}</option>
+        <option value="southern" selected={{if (eq settings.hemisphere "southern") "selected"}}>{{t "settings.hemisphere.options.southern"}}</option>
       </select>
     </div>
   </form>
@@ -28,9 +28,9 @@
 <hr class="my-5">
 
 <div class="container-fluid">
-  <p>Thank you very much for using my site. If you have any feedback or suggestions for improvement, I'd appreciate it. Please do not hesitate to contact me on twitter and share this with your friends.</p>
+  <p>{{t "settings.thankYou"}}</p>
   <div class="alert alert-info">
-    <strong>Are you multi-lingual?</strong> I'd like to translate this app to support different languages. If you are interested in helping to make this app multi-lingual, please get in touch!
+    {{t "settings.translations" htmlSafe=true}}
   </div>
 </div>
 
