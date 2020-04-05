@@ -6,6 +6,7 @@ export default Controller.extend({
   settings: service('settings'),
 
   critterPrice: computed('model.price', 'settings.flickPrices', function() {
+    // TODO: Create a model class for critters and use to de-duplicate this code.
     if(this.get('settings.flickPrices')) {
       return this.get('model.price') * 1.5;
     }
@@ -13,6 +14,7 @@ export default Controller.extend({
   }),
 
   activeMonths: computed('model.months.[]', 'settings.hemisphere', function() {
+    // TODO: Make months translatable.
     const critterMonths = this.get('model.months')[this.get('settings.hemisphere')];
     return [
       [
