@@ -20,7 +20,8 @@ module.exports = function() {
       'sort-up',
       'badge-check',
       'exclamation-triangle',
-      'info-circle'
+      'info-circle',
+      'language'
     ]
   };
 };

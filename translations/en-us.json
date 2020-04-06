@@ -230,5 +230,9 @@
     "oarfish": "Oarfish",
     "barreleye": "Barreleye",
     "coelacanth": "Coelacanth"
+  },
+  "language": {
+    "en-us": "English",
+    "es": "Español"
   }
 }
