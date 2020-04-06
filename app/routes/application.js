@@ -1482,7 +1482,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       },
       {
         type: 'fish',
-        isRare: false,
+        isRare: true,
         name: 'Golden Trout',
         price: 15000,
         location: 'River (Cliff)',
