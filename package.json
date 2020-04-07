@@ -15,7 +15,8 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "generate:sitemap": "node dev-bin/sitemap.js > public/sitemap.xml"
   },
   "devDependencies": {
     "@ember/jquery": "^0.6.0",
@@ -63,7 +64,8 @@
     "loader.js": "^4.7.0",
     "popper.js": "^1.16.1",
     "qunit-dom": "^0.8.4",
-    "sass": "^1.26.3"
+    "sass": "^1.26.3",
+    "xml": "^1.0.1"
   },
   "engines": {
     "node": "8.* || >= 10.*"
