@@ -19,9 +19,7 @@ module.exports = function() {
       'sort-down',
       'sort-up',
       'asterisk',
-      'certificate',
       'exclamation-triangle',
-      'calendar-plus',
       'info-circle'
     ]
   };
