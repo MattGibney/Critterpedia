@@ -2051,7 +2051,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'hammerhaead_shark',
+        name: 'hammerhead_shark',
         price: 8000,
         location: 'Sea',
         time: {

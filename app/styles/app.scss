@@ -5,6 +5,28 @@ $theme-colors: (
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+@import "insectsprites";
+@import "fishsprites";
+
+// .critter-list-icon {
+//   background-color: green;
+//   width: 100%;
+//   min-height: 96px;
+//   background-size: auto; // Sprites are tiled 9x9
+// }
+
+.critter-list-icon {
+  background-color: green;
+  width: 128px;
+  transform: scale(.8);
+}
+
+.critter-list-icon:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
 .colour-twitter {
   color: #20A1F3;
 }
