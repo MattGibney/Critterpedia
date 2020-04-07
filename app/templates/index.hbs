@@ -17,7 +17,13 @@
 
 <div class="container-fluid">
   <div class="my-3">
-    <p>{{t "critterList.filter.heading"}}:</p>
+    <div class="d-flex justify-content-between align-items-end">
+      <p class="mb-3">{{t "critterList.filter.heading"}}:</p>
+      <div class="btn-group btn-group-sm mb-3" role="group" aria-label="...">
+        <button type="button" class="btn btn-outline-secondary btn-sm {{if (eq viewMode "grid") "active"}}" {{action "changeView" "grid"}}>{{fa-icon "th-large" prefix="fas"}}</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm {{if (eq viewMode "list") "active"}}" {{action "changeView" "list"}}>{{fa-icon "stream" prefix="fas"}}</button>
+      </div>
+    </div>
     <div class="row no-gutters">
       <div class="col pr-1">
         <div class="btn-group d-flex" role="group">
@@ -48,30 +54,32 @@
   </div>
 </div>
 
-{{!-- <table class="table table-narrow">
-  <thead>
-    <tr>
-      <th {{action "sortBy" "name"}} role="button">{{t "critterList.column.name"}} <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "location"}} class="min-w-100-px" role="button">{{t "critterList.column.location"}} <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "price"}} class="min-w-75-px" role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-      <th {{action "sortBy" "time"}} class="min-w-100-px" role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
-    </tr>
-  </thead>
-  {{#each sortedCritters as |critter|}}
-    {{critter-table-row critter=critter currentTime=currentTime hemisphere=settings.hemisphere flickPrices=settings.flickPrices}}
-  {{/each}}
-</table> --}}
-
-<div class="container-fluid">
-  <div class="row no-gutters">
+{{#if (eq viewMode "list")}}
+  <table class="table table-narrow">
+    <thead>
+      <tr>
+        <th {{action "sortBy" "name"}} role="button">{{t "critterList.column.name"}} <span class="text-muted">{{fa-icon (if (eq sortBy "name") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+        <th {{action "sortBy" "location"}} class="min-w-100-px" role="button">{{t "critterList.column.location"}} <span class="text-muted">{{fa-icon (if (eq sortBy "location") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+        <th {{action "sortBy" "price"}} class="min-w-75-px" role="button">{{t "critterList.column.price"}} <span class="text-muted">{{fa-icon (if (eq sortBy "price") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+        <th {{action "sortBy" "time"}} class="min-w-100-px" role="button">{{t "critterList.column.time"}} <span class="text-muted">{{fa-icon (if (eq sortBy "time") (if (eq sortDir "asc") "sort-up" "sort-down") "sort") prefix="fas"}}</span></th>
+      </tr>
+    </thead>
     {{#each sortedCritters as |critter|}}
-      <div class="col-4 d-flex flex-column align-items-center text-center">
-        <div class="critter-list-icon sprite-{{critter.type}} sprite-{{critter.type}}-{{critter.name}}"></div>
-
-        {{critter.name}}
-      </div>
+      {{critter-table-row critter=critter currentTime=currentTime hemisphere=settings.hemisphere flickPrices=settings.flickPrices}}
     {{/each}}
+  </table>
+{{else}}
+  <div class="container-fluid px-1">
+    <div class="text-center my-2">
+      <p class="text-warning mb-0">{{fa-icon "exclamation-triangle" prefix="fas"}} {{t "critterOutSeason"}}</p>
+      <p class="text-info mb-0">{{fa-icon "badge-check" prefix="fas"}} {{t "critterInSeason"}}</p>
+    </div>
+    <div class="row narrow-gutters">
+      {{#each sortedCritters as |critter|}}
+        {{critter-grid-item critter=critter currentTime=currentTime hemisphere=settings.hemisphere flickPrices=settings.flickPrices}}
+      {{/each}}
+    </div>
   </div>
-</div>
+{{/if}}
 
 {{outlet}}

@@ -21,7 +21,9 @@ module.exports = function() {
       'badge-check',
       'exclamation-triangle',
       'info-circle',
-      'language'
+      'language',
+      'stream',
+      'th-large'
     ]
   };
 };

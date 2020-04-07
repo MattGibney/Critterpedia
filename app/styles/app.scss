@@ -8,23 +8,32 @@ $theme-colors: (
 @import "insectsprites";
 @import "fishsprites";
 
-// .critter-list-icon {
-//   background-color: green;
-//   width: 100%;
-//   min-height: 96px;
-//   background-size: auto; // Sprites are tiled 9x9
-// }
+.narrow-gutters {
+  margin-right: 0;
+  margin-left: 0;
 
-.critter-list-icon {
-  background-color: green;
-  width: 128px;
+  & > .col,
+  & > [class*=col-] {
+    padding-right: .2rem;
+    padding-left: .2rem;
+  }
+}
+
+.critter-icon-container {
+  background-color: $gray-200;
+  border-radius: 50% !important;
+  border: .4rem solid $gray-400;
   transform: scale(.8);
 }
 
-.critter-list-icon:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+.critter-list-icon {
+  width: 128px;
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
 }
 
 .colour-twitter {

@@ -14,6 +14,8 @@ export default Controller.extend({
   sortBy: 'name',
   sortDir: 'asc',
 
+  viewMode: 'list', // list/grid
+
   init() {
     this._super(...arguments);
     this.set('date', new Date());
@@ -39,33 +41,33 @@ export default Controller.extend({
   }),
 
   availableCritters: computed('critterType', 'critterTime', 'currentTime.{month,hour}', 'settings.hemisphere', function() {
-    return this.get('model').filterBy('type', this.get('critterType'));
-    // return this.get('model').filterBy('type', this.get('critterType')).filter(f => {
+    // return this.get('model').filterBy('type', this.get('critterType'));
+    return this.get('model').filterBy('type', this.get('critterType')).filter(f => {
 
-    //   if(f.months[this.get('settings.hemisphere')].includes(this.get('currentTime.month'))) {
-    //     if(!f.time || this.get('critterTime') === 'month') {
-    //       // No time restriction means all day
-    //       return true;
-    //     }
+      if(f.months[this.get('settings.hemisphere')].includes(this.get('currentTime.month'))) {
+        if(!f.time || this.get('critterTime') === 'month') {
+          // No time restriction means all day
+          return true;
+        }
 
-    //     const startTime = parseInt(f.time.start);
-    //     const endTime = parseInt(f.time.end);
+        const startTime = parseInt(f.time.start);
+        const endTime = parseInt(f.time.end);
 
-    //     // Same Day
-    //     if(startTime < endTime) {
-    //       if(this.get('currentTime.hour') >= startTime && this.get('currentTime.hour') < endTime) {
-    //         return true;
-    //       }
-    //       return false;
-    //     }else{
-    //       if(this.get('currentTime.hour') < endTime || this.get('currentTime.hour') >= startTime) {
-    //         return true;
-    //       }
-    //       return false;
-    //     }
-    //   }
-    //   return false;
-    // });
+        // Same Day
+        if(startTime < endTime) {
+          if(this.get('currentTime.hour') >= startTime && this.get('currentTime.hour') < endTime) {
+            return true;
+          }
+          return false;
+        }else{
+          if(this.get('currentTime.hour') < endTime || this.get('currentTime.hour') >= startTime) {
+            return true;
+          }
+          return false;
+        }
+      }
+      return false;
+    });
   }),
 
   sortedCritters: computed('availableCritters.[]', 'sortBy', 'sortDir', function () {
@@ -104,6 +106,9 @@ export default Controller.extend({
     changeMonth(month) {
       this.set('critterTime', 'month');
       return this.set('monthOverride', month);
+    },
+    changeView(view) {
+      this.set('viewMode', view);
     }
   }
 });
