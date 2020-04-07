@@ -1,6 +1,6 @@
 {
   "name": "critterpedia",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "private": true,
   "description": "Small description for critterpedia goes here",
   "repository": "",
@@ -22,7 +22,7 @@
     "@ember/optional-features": "^0.7.0",
     "@fortawesome/ember-fontawesome": "^0.2.1",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
-    "@fortawesome/pro-solid-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@types/ember": "^3.1.2",
     "bootstrap": "^4.4.1",
     "broccoli-asset-rev": "^3.0.0",

@@ -4,13 +4,17 @@ import { inject as service } from '@ember/service';
 
 export default Route.extend(AnalyticsRouteMixin, {
   intl: service(),
+  settings: service('settings'),
   
   beforeModel() {
     this._super(...arguments);
     return this.intl.setLocale(['en-us']);
   },
 
-  model() {
+  model(params) {
+    if(params.hemisphere === 'southern') {
+      this.set('settings.hemisphere', params.hemisphere);
+    }
     return [
       {
         type: 'insect',
