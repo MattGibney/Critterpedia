@@ -7,11 +7,13 @@ import setupIntl from 'ember-intl/test-support/setup-intl';
 
 module('Integration | Component | critter-table-row', function(hooks) {
   setupRenderingTest(hooks);
-  setupIntl(hooks, 'en-us');
+  setupIntl(hooks, 'en-us', {
+    test_critter: "Test Critter"
+  });
 
   test('Simple Rendering', async function(assert) {
     const mockCritter = EmberObject.create({
-      name: 'Test Critter',
+      name: 'test_critter',
       location: 'River',
       price: 1000,
       months: {
@@ -25,7 +27,7 @@ module('Integration | Component | critter-table-row', function(hooks) {
 
     await render(hbs`{{critter-table-row critter=critter currentTime=currentTime hemisphere="northern"}}`);
 
-    assert.equal(this.element.querySelector('tr:first-child>td:nth-child(1)').textContent.trim(), 'Test Critter');
+    assert.equal(this.element.querySelector('tr:first-child>td:nth-child(1)').textContent.trim(), 't:critterData.test_critter:()');
     assert.equal(this.element.querySelector('tr:first-child>td:nth-child(2)').textContent.trim(), 'River');
     assert.equal(this.element.querySelector('tr:first-child>td:nth-child(3)').textContent.trim(), '1,000');
     assert.equal(this.element.querySelector('tr:first-child>td:nth-child(4)').textContent.trim(), 'All Day');

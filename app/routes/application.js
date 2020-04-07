@@ -1,4 +1,4 @@
-import Route from '@ember/routing/route';
+  import Route from '@ember/routing/route';
 import AnalyticsRouteMixin from 'emberfire/mixins/analytics-route';
 import { inject as service } from '@ember/service';
 
@@ -15,7 +15,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Common Butterfly',
+        name: 'common_butterfly',
         price: 160,
         location: 'Flying',
         time: {
@@ -30,7 +30,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Yellow Butterfly',
+        name: 'yellow_butterfly',
         price: 160,
         location: 'Flying',
         time: {
@@ -45,7 +45,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Tiger Butterfly',
+        name: 'tiger_butterfly',
         price: 240,
         location: 'Flying',
         time: {
@@ -60,7 +60,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Peacock Butterfly',
+        name: 'peacock_butterfly',
         price: 2500,
         location: 'Above Flowers',
         time: {
@@ -75,7 +75,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Common Bluebottle',
+        name: 'common_bluebottle',
         price: 300,
         location: 'Flying',
         time: {
@@ -90,7 +90,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Paper Kite Butterfly',
+        name: 'paper_kite_butterfly',
         price: 1000,
         location: 'Flying',
         time: {
@@ -105,7 +105,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Great Purple Emperor',
+        name: 'great_purple_emperor',
         price: 3000,
         location: 'Flying',
         time: {
@@ -120,7 +120,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Monarch Butterfly',
+        name: 'monarch_butterfly',
         price: 140,
         location: 'Flying',
         time: {
@@ -135,7 +135,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Emperor Butterfly',
+        name: 'emperor_butterfly',
         price: 4000,
         location: 'Flying',
         time: {
@@ -150,7 +150,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Agrias Butterfly',
+        name: 'agrias_butterfly',
         price: 3000,
         location: 'Flying',
         time: {
@@ -165,7 +165,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: "Rajah Brooke's Birdwing",
+        name: "rajah_brookes_birdwing",
         price: 2500,
         location: 'Above Flowers',
         time: {
@@ -180,7 +180,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: "Queen Alexandra's Birdwing",
+        name: "queen_alexandras_birdwing",
         price: 4000,
         location: 'Flying',
         time: {
@@ -195,7 +195,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Moth',
+        name: 'moth',
         price: 130,
         location: 'Around Light',
         time: {
@@ -210,7 +210,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Atlas Moth',
+        name: 'atlas_moth',
         price: 3000,
         location: 'On Trees',
         time: {
@@ -225,7 +225,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Madagascan Sunset Moth',
+        name: 'madagascan_sunset_moth',
         price: 2500,
         location: 'Flying',
         time: {
@@ -240,7 +240,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Long Locust',
+        name: 'long_locust',
         price: 200,
         location: 'Grass',
         time: {
@@ -255,7 +255,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Migratory Locust',
+        name: 'migratory_locust',
         price: 600,
         location: 'Grass',
         time: {
@@ -270,7 +270,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Rice Grasshopper',
+        name: 'rice_grasshopper',
         price: 160,
         location: 'Grass',
         time: {
@@ -285,7 +285,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Grasshopper',
+        name: 'grasshopper',
         price: 160,
         location: 'Grass',
         time: {
@@ -300,7 +300,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Cricket',
+        name: 'cricket',
         price: 130,
         location: 'Grass',
         time: {
@@ -315,7 +315,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Bell Cricket',
+        name: 'bell_cricket',
         price: 430,
         location: 'Grass',
         time: {
@@ -330,7 +330,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Mantis',
+        name: 'mantis',
         price: 430,
         location: 'Flowers',
         time: {
@@ -345,7 +345,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Orchid Mantis',
+        name: 'orchid_mantis',
         price: 2400,
         location: 'Flowers',
         time: {
@@ -360,7 +360,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Honeybee',
+        name: 'honeybee',
         price: 200,
         location: 'Above Flowers',
         time: {
@@ -375,7 +375,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Wasp',
+        name: 'wasp',
         price: 2500,
         location: 'Shaking Trees',
         months: {
@@ -386,7 +386,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Brown Cicada',
+        name: 'brown_cicada',
         price: 250,
         location: 'On Trees',
         time: {
@@ -401,7 +401,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Robust Cicada',
+        name: 'robust_cicada',
         price: 300,
         location: 'On Trees',
         time: {
@@ -416,7 +416,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Giant Cicada',
+        name: 'giant_cicada',
         price: 500,
         location: 'On Trees',
         time: {
@@ -431,7 +431,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Walker Cicada',
+        name: 'walker_cicada',
         price: 400,
         location: 'On Trees',
         time: {
@@ -446,7 +446,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Evening Cicada',
+        name: 'evening_cicada',
         price: 550,
         location: 'On Trees',
         time: {
@@ -461,7 +461,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Cicada Shell',
+        name: 'cicada_shell',
         price: 10,
         location: 'On Trees',
         months: {
@@ -472,7 +472,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Red Dragonfly',
+        name: 'red_dragonfly',
         price: 180,
         location: 'Flying',
         time: {
@@ -487,7 +487,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Darner Dragonfly',
+        name: 'darner_dragonfly',
         price: 230,
         location: 'Flying',
         time: {
@@ -502,7 +502,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Banded Dragonfly',
+        name: 'banded_dragonfly',
         price: 4500,
         location: 'Flying',
         time: {
@@ -517,7 +517,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Damselfly',
+        name: 'damselfly',
         price: 500,
         location: 'Flying',
         months: {
@@ -528,7 +528,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Firefly',
+        name: 'firefly',
         price: 300,
         location: 'Rivers and Ponds',
         time: {
@@ -543,7 +543,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Mole cricket',
+        name: 'mole_cricket',
         price: 500,
         location: 'Underground',
         months: {
@@ -554,7 +554,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Pondskater',
+        name: 'pondskater',
         price: 130,
         location: 'Rivers',
         time: {
@@ -569,7 +569,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Diving Beetle',
+        name: 'diving_beetle',
         price: 800,
         location: 'Rivers',
         time: {
@@ -584,7 +584,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Giant Water Bug',
+        name: 'giant_water_bug',
         price: 2000,
         location: 'Rivers and Ponds',
         time: {
@@ -599,7 +599,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Stinkbug',
+        name: 'stinkbug',
         price: 120,
         location: 'Flowers',
         months: {
@@ -610,7 +610,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Man-faced Stink Bug',
+        name: 'man-faced_stink_bug',
         price: 1000,
         location: 'Flowers',
         time: {
@@ -625,7 +625,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Ladybug',
+        name: 'ladybug',
         price: 200,
         location: 'Flowers',
         time: {
@@ -640,7 +640,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Tiger Beetle',
+        name: 'tiger_beetle',
         price: 1500,
         location: 'Flying',
         months: {
@@ -651,7 +651,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Jewel Beetle',
+        name: 'jewel_beetle',
         price: 2400,
         location: 'On Trees',
         months: {
@@ -662,7 +662,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Citrus Long-horned Beetle',
+        name: 'citrus_long-horned_beetle',
         price: 350,
         location: 'Tree Stumps',
         months: {
@@ -673,7 +673,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Rosalia Batesi Beetle',
+        name: 'rosalia_batesi_beetle',
         price: 3000,
         location: 'Tree Stumps',
         months: {
@@ -684,7 +684,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Blue Weevil Beetle',
+        name: 'blue_weevil_beetle',
         price: 800,
         location: 'On Trees',
         months: {
@@ -695,7 +695,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Violin Beetle',
+        name: 'violin_beetle',
         price: 450,
         location: 'On Trees',
         months: {
@@ -706,7 +706,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Dung Beetle',
+        name: 'dung_beetle',
         price: 3000,
         location: 'Ground',
         months: {
@@ -717,7 +717,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Earth-boring Dung Beetle',
+        name: 'earth-boring_dung_beetle',
         price: 300,
         location: 'Ground',
         months: {
@@ -728,7 +728,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Scarab Beetle',
+        name: 'scarab_beetle',
         price: 10000,
         location: 'On Trees',
         time: {
@@ -743,7 +743,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Drone Beetle',
+        name: 'drone_beetle',
         price: 200,
         location: 'On Trees',
         months: {
@@ -754,7 +754,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Goliath Beetle',
+        name: 'goliath_beetle',
         price: 8000,
         location: 'On Trees',
         time: {
@@ -769,7 +769,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Saw Stag',
+        name: 'saw_stag',
         price: 2000,
         location: 'On Trees',
         months: {
@@ -780,7 +780,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Miyama Stag',
+        name: 'miyama_stag',
         price: 1000,
         location: 'On Trees',
         months: {
@@ -791,7 +791,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Giant Stag',
+        name: 'giant_stag',
         price: '0	0',
         location: 'On Trees',
         time: {
@@ -806,7 +806,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Rainbow Stag',
+        name: 'rainbow_stag',
         price: 6000,
         location: 'On Trees',
         time: {
@@ -821,7 +821,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Cyclommatus Stag',
+        name: 'cyclommatus_stag',
         price: 8000,
         location: 'On Trees',
         time: {
@@ -836,7 +836,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Golden Stag',
+        name: 'golden_stag',
         price: 12000,
         location: 'On Trees',
         time: {
@@ -851,7 +851,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Giraffe Stag',
+        name: 'giraffe_stag',
         price: '0	0',
         location: 'On Trees',
         time: {
@@ -866,7 +866,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Horned Dynastid',
+        name: 'horned_dynastid',
         price: 1350,
         location: 'On Trees',
         time: {
@@ -881,7 +881,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Horned Atlas',
+        name: 'horned_atlas',
         price: 8000,
         location: 'On Trees',
         time: {
@@ -896,7 +896,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Horned Elephant',
+        name: 'horned_elephant',
         price: 8000,
         location: 'On Trees',
         time: {
@@ -911,7 +911,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Horned Hercules',
+        name: 'horned_hercules',
         price: 12000,
         location: 'On Trees',
         time: {
@@ -926,7 +926,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Walking Stick',
+        name: 'walking_stick',
         price: 600,
         location: 'On Trees',
         time: {
@@ -941,7 +941,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Walking Leaf',
+        name: 'walking_leaf',
         price: 600,
         location: 'Ground Beneath Trees',
         months: {
@@ -952,7 +952,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Bagworm',
+        name: 'bagworm',
         price: 600,
         location: 'Shaking Trees',
         months: {
@@ -963,7 +963,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Ant',
+        name: 'ant',
         price: 80,
         location: 'Rotten Turnips and Fruit',
         months: {
@@ -974,7 +974,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Hermit Crab',
+        name: 'hermit_crab',
         price: 1000,
         location: 'Beach',
         time: {
@@ -989,7 +989,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Wharf Roach',
+        name: 'wharf_roach',
         price: 200,
         location: 'Beach Rocks',
         months: {
@@ -1000,7 +1000,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Fly',
+        name: 'fly',
         price: 60,
         location: 'Rotten Food and Garbage',
         months: {
@@ -1011,7 +1011,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Mosquito',
+        name: 'mosquito',
         price: 130,
         location: 'Flying',
         time: {
@@ -1026,7 +1026,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Flea',
+        name: 'flea',
         price: 70,
         location: 'On Flea-Infested Villagers',
         months: {
@@ -1037,7 +1037,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Snail',
+        name: 'snail',
         price: 250,
         location: 'Under Rocks',
         months: {
@@ -1048,7 +1048,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Pill Bug',
+        name: 'pill_bug',
         price: 250,
         location: 'Under Rocks',
         time: {
@@ -1063,7 +1063,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Centipede',
+        name: 'centipede',
         price: 300,
         location: 'Under Rocks',
         time: {
@@ -1078,7 +1078,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: false,
-        name: 'Spider',
+        name: 'spider',
         price: 480,
         location: 'Shaking Trees',
         time: {
@@ -1093,7 +1093,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Tarantula',
+        name: 'tarantula',
         price: 8000,
         location: 'Ground',
         time: {
@@ -1108,7 +1108,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'insect',
         isRare: true,
-        name: 'Scorpion',
+        name: 'scorpion',
         price: 8000,
         location: 'Ground',
         time: {
@@ -1123,7 +1123,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Bitterling',
+        name: 'bitterling',
         price: 900,
         location: 'River',
         months: {
@@ -1134,7 +1134,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Pale Chub',
+        name: 'pale_chub',
         price: 160,
         location: 'River',
         time: {
@@ -1149,7 +1149,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Crucian Carp',
+        name: 'crucian_carp',
         price: 160,
         location: 'River',
         months: {
@@ -1160,7 +1160,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Dace',
+        name: 'dace',
         price: 240,
         location: 'River',
         time: {
@@ -1175,7 +1175,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Carp',
+        name: 'carp',
         price: 300,
         location: 'Pond',
         months: {
@@ -1186,7 +1186,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Koi',
+        name: 'koi',
         price: 4000,
         location: 'Pond',
         time: {
@@ -1201,7 +1201,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Goldfish',
+        name: 'goldfish',
         price: 1300,
         location: 'Pond',
         months: {
@@ -1212,7 +1212,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Pop-eyed Goldfish',
+        name: 'pop-eyed_goldfish',
         price: 1300,
         location: 'Pond',
         time: {
@@ -1227,7 +1227,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Ranchu Goldfish',
+        name: 'ranchu_goldfish',
         price: 4500,
         location: 'Pond',
         time: {
@@ -1242,7 +1242,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Killifish',
+        name: 'killifish',
         price: 300,
         location: 'Pond',
         months: {
@@ -1253,7 +1253,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Crawfish',
+        name: 'crawfish',
         price: 200,
         location: 'Pond',
         months: {
@@ -1264,7 +1264,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Soft-shelled Turtle',
+        name: 'soft-shelled_turtle',
         price: 3750,
         location: 'River',
         time: {
@@ -1279,7 +1279,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Snapping Turtle',
+        name: 'snapping_turtle',
         price: 5000,
         location: 'River',
         time: {
@@ -1294,7 +1294,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Tadpole',
+        name: 'tadpole',
         price: 100,
         location: 'Pond',
         months: {
@@ -1305,7 +1305,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Frog',
+        name: 'frog',
         price: 120,
         location: 'Pond',
         months: {
@@ -1316,7 +1316,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Freshwater Goby',
+        name: 'freshwater_goby',
         price: 400,
         location: 'River',
         time: {
@@ -1331,7 +1331,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Loach',
+        name: 'loach',
         price: 400,
         location: 'River',
         months: {
@@ -1342,7 +1342,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Catfish',
+        name: 'catfish',
         price: 800,
         location: 'Pond',
         time: {
@@ -1357,7 +1357,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Giant Snakehead',
+        name: 'giant_snakehead',
         price: 5500,
         location: 'Pond',
         time: {
@@ -1372,7 +1372,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Bluegill',
+        name: 'bluegill',
         price: 180,
         location: 'River',
         time: {
@@ -1387,7 +1387,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Yellow Perch',
+        name: 'yellow_perch',
         price: 300,
         location: 'River',
         months: {
@@ -1398,7 +1398,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Black Bass',
+        name: 'black_bass',
         price: 400,
         location: 'River',
         months: {
@@ -1409,7 +1409,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Tilapia',
+        name: 'tilapia',
         price: 800,
         location: 'River',
         months: {
@@ -1420,7 +1420,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Pike',
+        name: 'pike',
         price: 1800,
         location: 'River',
         months: {
@@ -1431,7 +1431,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Pond Smelt',
+        name: 'pond_smelt',
         price: '0,',
         location: 'River',
         months: {
@@ -1442,7 +1442,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Sweetfish',
+        name: 'sweetfish',
         price: 900,
         location: 'River',
         months: {
@@ -1453,7 +1453,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Cherry Salmon',
+        name: 'cherry_salmon',
         price: 1000,
         location: 'River (Cliff)',
         time: {
@@ -1468,7 +1468,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Char',
+        name: 'char',
         price: 3800,
         location: 'River (Cliff)',
         time: {
@@ -1482,8 +1482,8 @@ export default Route.extend(AnalyticsRouteMixin, {
       },
       {
         type: 'fish',
-        isRare: true,
-        name: 'Golden Trout',
+        isRare: false,
+        name: 'golden_trout',
         price: 15000,
         location: 'River (Cliff)',
         time: {
@@ -1498,7 +1498,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Stringfish',
+        name: 'stringfish',
         price: 15000,
         location: 'River (Cliff)',
         time: {
@@ -1513,7 +1513,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Salmon',
+        name: 'salmon',
         price: 700,
         location: 'River (Mouth)',
         months: {
@@ -1524,7 +1524,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'King Salmon',
+        name: 'king_salmon',
         price: 1800,
         location: 'River (Mouth)',
         months: {
@@ -1535,7 +1535,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Mitten Crab',
+        name: 'mitten_crab',
         price: 2000,
         location: 'River',
         time: {
@@ -1550,7 +1550,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Guppy',
+        name: 'guppy',
         price: 1300,
         location: 'River',
         time: {
@@ -1565,7 +1565,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Nibble Fish',
+        name: 'nibble_fish',
         price: 1500,
         location: 'River',
         time: {
@@ -1580,7 +1580,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Angelfish',
+        name: 'angelfish',
         price: 3000,
         location: 'River',
         time: {
@@ -1595,7 +1595,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Betta',
+        name: 'betta',
         price: 2500,
         location: 'River',
         time: {
@@ -1610,7 +1610,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Neon Tetra',
+        name: 'neon_tetra',
         price: 500,
         location: 'River',
         time: {
@@ -1625,7 +1625,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Rainbowfish',
+        name: 'rainbowfish',
         price: 800,
         location: 'River',
         time: {
@@ -1640,7 +1640,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Piranha',
+        name: 'piranha',
         price: 2500,
         location: 'River',
         time: {
@@ -1655,7 +1655,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Arowana',
+        name: 'arowana',
         price: 10000,
         location: 'River',
         time: {
@@ -1670,7 +1670,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Dorado',
+        name: 'dorado',
         price: 15000,
         location: 'River',
         time: {
@@ -1685,7 +1685,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Gar',
+        name: 'gar',
         price: 6000,
         location: 'Pond',
         time: {
@@ -1700,7 +1700,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Arapaima',
+        name: 'arapaima',
         price: 10000,
         location: 'River',
         time: {
@@ -1715,7 +1715,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Saddled Bichir',
+        name: 'saddled_bichir',
         price: 4000,
         location: 'River',
         time: {
@@ -1730,7 +1730,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Sturgeon',
+        name: 'sturgeon',
         price: 10000,
         location: 'River (Mouth)',
         months: {
@@ -1741,7 +1741,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Sea Butterfly',
+        name: 'sea_butterfly',
         price: 1000,
         location: 'Sea',
         months: {
@@ -1752,7 +1752,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Seahorse',
+        name: 'seahorse',
         price: 1100,
         location: 'Sea',
         months: {
@@ -1763,7 +1763,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Clownfish',
+        name: 'clownfish',
         price: 650,
         location: 'Sea',
         months: {
@@ -1774,7 +1774,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Surgeonfish',
+        name: 'surgeonfish',
         price: 1000,
         location: 'Sea',
         months: {
@@ -1785,7 +1785,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Butterfly Fish',
+        name: 'butterfly_fish',
         price: 1000,
         location: 'Sea',
         months: {
@@ -1796,7 +1796,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Napoleonfish',
+        name: 'napoleonfish',
         price: 10000,
         location: 'Sea',
         time: {
@@ -1811,7 +1811,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Zebra Turkeyfish',
+        name: 'zebra_turkeyfish',
         price: 500,
         location: 'Sea',
         months: {
@@ -1822,7 +1822,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Blowfish',
+        name: 'blowfish',
         price: 5000,
         location: 'Sea',
         time: {
@@ -1837,7 +1837,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Puffer Fish',
+        name: 'puffer_fish',
         price: 250,
         location: 'Sea',
         months: {
@@ -1848,7 +1848,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Anchovy',
+        name: 'anchovy',
         price: 200,
         location: 'Sea',
         time: {
@@ -1863,7 +1863,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Horse Mackerel',
+        name: 'horse_mackerel',
         price: 150,
         location: 'Sea',
         months: {
@@ -1874,7 +1874,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Barred Knifejaw',
+        name: 'barred_knifejaw',
         price: 5000,
         location: 'Sea',
         months: {
@@ -1885,7 +1885,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Sea Bass',
+        name: 'sea_bass',
         price: 400,
         location: 'Sea',
         months: {
@@ -1896,7 +1896,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Red Snapper',
+        name: 'red_snapper',
         price: 3000,
         location: 'Sea',
         months: {
@@ -1907,7 +1907,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Dab',
+        name: 'dab',
         price: 300,
         location: 'Sea',
         months: {
@@ -1918,7 +1918,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Olive Flounder',
+        name: 'olive_flounder',
         price: 800,
         location: 'Sea',
         months: {
@@ -1929,7 +1929,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Squid',
+        name: 'squid',
         price: 500,
         location: 'Sea',
         months: {
@@ -1940,7 +1940,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Moray Eel',
+        name: 'moray_eel',
         price: 2000,
         location: 'Sea',
         months: {
@@ -1951,7 +1951,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Ribbon Eel',
+        name: 'ribbon_eel',
         price: 600,
         location: 'Sea',
         months: {
@@ -1962,7 +1962,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Tuna',
+        name: 'tuna',
         price: 7000,
         location: 'Pier',
         months: {
@@ -1973,7 +1973,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Blue Marlin',
+        name: 'blue_marlin',
         price: 10000,
         location: 'Pier',
         months: {
@@ -1984,7 +1984,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Giant Trevally',
+        name: 'giant_trevally',
         price: 4500,
         location: 'Pier',
         months: {
@@ -1995,7 +1995,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Mahi-mahi',
+        name: 'mahi-mahi',
         price: 6000,
         location: 'Pier',
         months: {
@@ -2006,7 +2006,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Ocean Sunfish',
+        name: 'ocean_sunfish',
         price: 4000,
         location: 'Sea',
         time: {
@@ -2021,7 +2021,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Ray',
+        name: 'ray',
         price: 3000,
         location: 'Sea',
         time: {
@@ -2036,7 +2036,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Saw Shark',
+        name: 'saw_shark',
         price: 12000,
         location: 'Sea',
         time: {
@@ -2051,7 +2051,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Hammerhaead Shark',
+        name: 'hammerhaead_shark',
         price: 8000,
         location: 'Sea',
         time: {
@@ -2066,7 +2066,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Great White Shark',
+        name: 'great_white_shark',
         price: 15000,
         location: 'Sea',
         time: {
@@ -2081,7 +2081,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Whale Shark',
+        name: 'whale_shark',
         price: 13000,
         location: 'Sea',
         months: {
@@ -2092,7 +2092,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Suckerfish',
+        name: 'suckerfish',
         price: 1500,
         location: 'Sea',
         months: {
@@ -2103,7 +2103,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: false,
-        name: 'Football Fish',
+        name: 'football_fish',
         price: 2500,
         location: 'Sea',
         time: {
@@ -2118,7 +2118,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Oarfish',
+        name: 'oarfish',
         price: 9000,
         location: 'Sea',
         months: {
@@ -2129,7 +2129,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Barreleye',
+        name: 'barreleye',
         price: 15000,
         location: 'Sea',
         time: {
@@ -2144,7 +2144,7 @@ export default Route.extend(AnalyticsRouteMixin, {
       {
         type: 'fish',
         isRare: true,
-        name: 'Coelacanth',
+        name: 'coelacanth',
         price: 15000,
         location: 'Sea (Rain)',
         months: {
