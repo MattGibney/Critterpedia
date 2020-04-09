@@ -20,8 +20,8 @@
     <div class="d-flex justify-content-between align-items-end">
       <p class="mb-3">{{t "critterList.filter.heading"}}:</p>
       <div class="btn-group btn-group-sm mb-3" role="group" aria-label="...">
-        <button type="button" class="btn btn-outline-secondary btn-sm {{if (eq viewMode "grid") "active"}}" {{action "changeView" "grid"}}>{{fa-icon "th-large" prefix="fas"}}</button>
-        <button type="button" class="btn btn-outline-secondary btn-sm {{if (eq viewMode "list") "active"}}" {{action "changeView" "list"}}>{{fa-icon "stream" prefix="fas"}}</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm {{if (eq settings.viewMode "grid") "active"}}" {{action "changeView" "grid"}}>{{fa-icon "th-large" prefix="fas"}}</button>
+        <button type="button" class="btn btn-outline-secondary btn-sm {{if (eq settings.viewMode "list") "active"}}" {{action "changeView" "list"}}>{{fa-icon "stream" prefix="fas"}}</button>
       </div>
     </div>
     <div class="row no-gutters">
@@ -54,7 +54,7 @@
   </div>
 </div>
 
-{{#if (eq viewMode "list")}}
+{{#if (eq settings.viewMode "list")}}
   <table class="table table-narrow">
     <thead>
       <tr>

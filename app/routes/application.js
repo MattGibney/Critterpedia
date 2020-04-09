@@ -1,14 +1,15 @@
   import Route from '@ember/routing/route';
 import AnalyticsRouteMixin from 'emberfire/mixins/analytics-route';
 import { inject as service } from '@ember/service';
+import { storageFor } from 'ember-local-storage';
 
 export default Route.extend(AnalyticsRouteMixin, {
   intl: service(),
-  settings: service('settings'),
+  settings: storageFor('settings'),
   
   beforeModel() {
     this._super(...arguments);
-    return this.intl.setLocale(['en-us']);
+    return this.intl.setLocale([this.get('settings.language')]);
   },
 
   model(params) {

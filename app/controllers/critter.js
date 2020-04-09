@@ -1,9 +1,9 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
-import { inject as service } from '@ember/service';
+import { storageFor } from 'ember-local-storage';
 
 export default Controller.extend({
-  settings: service('settings'),
+  settings: storageFor('settings'),
 
   critterPrice: computed('model.price', 'settings.flickPrices', function() {
     // TODO: Create a model class for critters and use to de-duplicate this code.

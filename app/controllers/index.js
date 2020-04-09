@@ -1,9 +1,10 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 import { inject as service } from '@ember/service';
+import { storageFor } from 'ember-local-storage';
 
 export default Controller.extend({
-  settings: service('settings'),
+  settings: storageFor('settings'),
   firebaseApp: service('firebase-app'),
 
   monthOverride: null,
@@ -14,7 +15,7 @@ export default Controller.extend({
   sortBy: 'name',
   sortDir: 'asc',
 
-  viewMode: 'list', // list/grid
+  // viewMode: 'list', // list/grid
 
   init() {
     this._super(...arguments);
@@ -108,7 +109,7 @@ export default Controller.extend({
       return this.set('monthOverride', month);
     },
     changeView(view) {
-      this.set('viewMode', view);
+      this.set('settings.viewMode', view);
     }
   }
 });
