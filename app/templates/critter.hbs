@@ -14,7 +14,7 @@
       <table class="table table-borderless">
         <tr>
           <td>{{t "critter.dataPoint.location"}}</td>
-          <td class="font-weight-bold">{{model.location}}</td>
+          <td class="font-weight-bold">{{t (concat "location." model.location)}}</td>
         </tr>
         <tr>
           <td>{{t "critter.dataPoint.price"}}</td>
@@ -57,7 +57,7 @@
             {{#each monthRow as |month|}}
               <td class="p-1">
                 <div class="py-2 {{if month.active "active rounded"}}">
-                  {{month.name}}
+                  {{t (concat "month." month.id ".short")}}
                 </div>
               </td>
             {{/each}}

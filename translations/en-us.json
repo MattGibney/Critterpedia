@@ -1,18 +1,54 @@
 {
   "toggleDropdown": "Toggle Dropdown",
   "month": {
-    "0": "January",
-    "1": "February",
-    "2": "March",
-    "3": "April",
-    "4": "May",
-    "5": "June",
-    "6": "July",
-    "7": "August",
-    "8": "September",
-    "9": "October",
-    "10": "November",
-    "11": "December"
+    "0": {
+      "long": "January",
+      "short": "Jan"
+    },
+    "1": {
+      "long": "February",
+      "short": "Feb"
+    },
+    "2": {
+      "long": "March",
+      "short": "Mar"
+    },
+    "3": {
+      "long": "April",
+      "short": "Apr"
+    },
+    "4": {
+      "long": "May",
+      "short": "May"
+    },
+    "5": {
+      "long": "June",
+      "short": "Jun"
+    },
+    "6": {
+      "long": "July",
+      "short": "Jul"
+    },
+    "7": {
+      "long": "August",
+      "short": "Aug"
+    },
+    "8": {
+      "long": "September",
+      "short": "Sep"
+    },
+    "9": {
+      "long": "October",
+      "short": "Oct"
+    },
+    "10": {
+      "long": "November",
+      "short": "Nov"
+    },
+    "11": {
+      "long": "December",
+      "short": "Dec"
+    }
   },
   "twitterHandle": "@findmoppler",
   "time": {
@@ -68,6 +104,34 @@
       "6": "6"
     },
     "seasonality": "Seasonality"
+  },
+  "location": {
+    "flying": "Flying",
+    "above_flowers": "Above Flowers",
+    "around_light": "Around Light",
+    "on_trees": "On Trees",
+    "grass": "Grass",
+    "flowers": "Flowers",
+    "shaking_trees": "Shaking Trees",
+    "underground": "Underground",
+    "tree_stumps": "Tree Stumps",
+    "ground": "Ground",
+    "ground_trees": "Ground Beneath Trees",
+    "rotten_turnips_fruit": "Rotten Turnips and Fruit",
+    "rotten_fruit_garbage": "Rotten Fruit and Garbage",
+    "flea_villagers": "On Flea-Infested Villagers",
+    "beach": "Beach",
+    "rocks_beach": "Beach Rocks",
+    "rocks_rain": "On Rocks (Rain)",
+    "rocks_under": "Under Rocks",
+    "river": "River",
+    "rivers_ponds": "Rivers And Ponds",
+    "river_cliff": "Rivers (Cliff)",
+    "river_mouth": "Rivers (Mouth)",
+    "pond": "Pond",
+    "sea": "Sea",
+    "sea_rain": "Sea (Rain)",
+    "pier": "Pier"
   },
   "critterData": {
     "common_butterfly": "Common Butterfly",

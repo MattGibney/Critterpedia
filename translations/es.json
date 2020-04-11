@@ -1,18 +1,54 @@
 {
-  "toggleDropdown": "Toggle Dropdown",
+  "toggleDropdown": "Desplegar alternar",
   "month": {
-    "0": "Enero",
-    "1": "Febrero",
-    "2": "Marzo",
-    "3": "Abril",
-    "4": "Mayo",
-    "5": "Junio",
-    "6": "Julio",
-    "7": "Agosto",
-    "8": "Septiembre",
-    "9": "Octubre",
-    "10": "Noviembre",
-    "11": "Diciembre"
+    "0": {
+      "long": "Enero",
+      "short": "Ene"
+    },
+    "1": {
+      "long": "Febrero",
+      "short": "Feb"
+    },
+    "2": {
+      "long": "Marzo",
+      "short": "Mar"
+    },
+    "3": {
+      "long": "Abril",
+      "short": "Abr"
+    },
+    "4": {
+      "long": "Mayo",
+      "short": "Mayo"
+    },
+    "5": {
+      "long": "Junio",
+      "short": "Jun"
+    },
+    "6": {
+      "long": "Julio",
+      "short": "Jul"
+    },
+    "7": {
+      "long": "Agosto",
+      "short": "Ago"
+    },
+    "8": {
+      "long": "Septiembre",
+      "short": "Sep"
+    },
+    "9": {
+      "long": "Octubre",
+      "short": "Oct"
+    },
+    "10": {
+      "long": "Noviembre",
+      "short": "Nov"
+    },
+    "11": {
+      "long": "Diciembre",
+      "short": "Dic"
+    }
   },
   "twitterHandle": "@findmoppler",
   "time": {
@@ -68,6 +104,34 @@
       "6": "6"
     },
     "seasonality": "Estacionalidad"
+  },
+  "location": {
+    "flying": "Volador",
+    "above_flowers": "Por encima de las flores",
+    "around_light": "Alrededor de la luz",
+    "on_trees": "En los árboles",
+    "grass": "Césped",
+    "flowers": "Flores",
+    "shaking_trees": "Sacudiendo árboles",
+    "underground": "Subterráneo",
+    "tree_stumps": "Tocones de árbol",
+    "ground": "Suelo",
+    "ground_trees": "Tierra debajo de los árboles",
+    "rotten_turnips_fruit": "Nabos podridos y frutas",
+    "rotten_fruit_garbage": "Fruta podrida y basura",
+    "flea_villagers": "Sobre aldeanos infestados de pulgas",
+    "beach": "Playa",
+    "rocks_beach": "Rocas de la playa",
+    "rocks_rain": "En las rocas (lluvia)",
+    "rocks_under": "Debajo de las rocas",
+    "river": "Río",
+    "rivers_ponds": "Rios Y Estanques",
+    "river_cliff": "Ríos (acantilado)",
+    "river_mouth": "Rios (Boca)",
+    "pond": "Estanque",
+    "sea": "Mar",
+    "sea_rain": "Mar (lluvia)",
+    "pier": "Muelle"
   },
   "critterData": {
     "common_butterfly": "Mariposa común",

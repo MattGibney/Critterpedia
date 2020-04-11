@@ -3,7 +3,7 @@
 </div>
 
 <h6 class="mt-auto mb-0">{{link-to (t (concat "critterData." critter.name)) "critter" critter.name class="stretched-link"}}</h6>
-<p class="mb-0">{{critter.location}}</p>
+<p class="mb-0">{{t (concat "location." critter.location)}}</p>
 <p class="mb-0">{{format-number critterPrice}} {{t "bells"}}</p>
 
 {{yield}}

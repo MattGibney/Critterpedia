@@ -18,22 +18,22 @@ export default Controller.extend({
     const critterMonths = this.get('model.months')[this.get('settings.hemisphere')];
     return [
       [
-        { name: 'Jan', active: critterMonths.includes(0) },
-        { name: 'Feb', active: critterMonths.includes(1) },
-        { name: 'Mar', active: critterMonths.includes(2) },
-        { name: 'Apr', active: critterMonths.includes(3) },
+        { id: 0, active: critterMonths.includes(0) },
+        { id: 1, active: critterMonths.includes(1) },
+        { id: 2, active: critterMonths.includes(2) },
+        { id: 3, active: critterMonths.includes(3) },
       ],
       [
-        { name: 'May', active: critterMonths.includes(4) },
-        { name: 'Jun', active: critterMonths.includes(5) },
-        { name: 'Jul', active: critterMonths.includes(6) },
-        { name: 'Aug', active: critterMonths.includes(7) },
+        { id: 4, active: critterMonths.includes(5) },
+        { id: 5, active: critterMonths.includes(4) },
+        { id: 6, active: critterMonths.includes(6) },
+        { id: 7, active: critterMonths.includes(7) },
       ],
       [
-        { name: 'Sep', active: critterMonths.includes(8) },
-        { name: 'Oct', active: critterMonths.includes(9) },
-        { name: 'Nov', active: critterMonths.includes(10) },
-        { name: 'Dec', active: critterMonths.includes(11) },
+        { id: 8, active: critterMonths.includes(8) },
+        { id: 9, active: critterMonths.includes(9) },
+        { id: 10, active: critterMonths.includes(10) },
+        { id: 11, active: critterMonths.includes(11) },
       ],
     ]
   }),

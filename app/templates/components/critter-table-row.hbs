@@ -2,7 +2,7 @@
   <td>
     {{link-to (t (concat "critterData." critter.name)) "critter" critter.name}}
   </td>
-  <td>{{critter.location}}</td>
+  <td>{{t (concat "location." critter.location)}}</td>
   <td>{{format-number critterPrice}}</td>
   <td>
     {{#if critter.time}}

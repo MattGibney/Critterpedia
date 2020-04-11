@@ -1,19 +1,55 @@
 {
-	"toggleDropdown": "Toggle Dropdown",
+	"toggleDropdown": "Basculer la liste déroulante",
 	"month": {
-		"0": "Janvier",
-		"1": "Février",
-		"10": "Novembre",
-		"11": "Décembre",
-		"2": "Mars",
-		"3": "Avril",
-		"4": "Mai",
-		"5": "Juin",
-		"6": "Juillet",
-		"7": "Août",
-		"8": "Septembre",
-		"9": "Octobre"
-	},
+    "0": {
+      "long": "Janvier",
+      "short": "Jan"
+    },
+    "1": {
+      "long": "Février",
+      "short": "Fév"
+    },
+    "2": {
+      "long": "Mars",
+      "short": "Mar"
+    },
+    "3": {
+      "long": "Avril",
+      "short": "Avr"
+    },
+    "4": {
+      "long": "Mai",
+      "short": "Mai"
+    },
+    "5": {
+      "long": "Juin",
+      "short": "Juin"
+    },
+    "6": {
+      "long": "Juillet",
+      "short": "Juil"
+    },
+    "7": {
+      "long": "Août",
+      "short": "Août"
+    },
+    "8": {
+      "long": "Septembre",
+      "short": "Sep"
+    },
+    "9": {
+      "long": "Octobre",
+      "short": "Oct"
+    },
+    "10": {
+      "long": "Novembre",
+      "short": "Nov"
+    },
+    "11": {
+      "long": "Décembre",
+      "short": "Déc"
+    }
+  },
 	"twitterHandle": "@findmoppler",
 	"time": {
 		"seperator": "-",
@@ -40,7 +76,7 @@
 		}
 	},
 	"settings": {
-		"heading": "Settings",
+		"heading": "Paramètres",
 		"changesSavedAlert": "Les modifications sont sauvegardées immédiatement.",
 		"hemisphere": {
 			"label": "Hémisphère",
@@ -69,6 +105,34 @@
 		},
 		"seasonality": "Mois"
 	},
+	"location": {
+    "flying": "En volant",
+    "above_flowers": "Au-dessus des fleurs",
+    "around_light": "Autour de la lumière",
+    "on_trees": "Sur les arbres",
+    "grass": "Herbe",
+    "flowers": "Fleurs",
+    "shaking_trees": "Secouant les arbres",
+    "underground": "Souterrain",
+    "tree_stumps": "Souches d'arbres",
+    "ground": "Sol",
+    "ground_trees": "Sol sous les arbres",
+    "rotten_turnips_fruit": "Navets et fruits pourris",
+    "rotten_fruit_garbage": "Fruits et ordures pourris",
+    "flea_villagers": "Sur les villageois infestés de puces",
+    "beach": "Plage",
+    "rocks_beach": "Roches à la plage",
+    "rocks_rain": "Sur les rochers (pluie)",
+    "rocks_under": "Sous les rochers",
+    "river": "Rivière",
+    "rivers_ponds": "Rivières et étangs",
+    "river_cliff": "Rivières (falaise)",
+    "river_mouth": "Rivières (bouche)",
+    "pond": "Étang",
+    "sea": "Mer",
+    "sea_rain": "Mer (pluie)",
+    "pier": "Jetée"
+  },
 	"critterData": {
 		"common_butterfly": "Piéride de la rave",
 		"yellow_butterfly": "Citrin",
@@ -215,7 +279,7 @@
 		"squid": "Calmar",
 		"moray_eel": "Murène",
 		"ribbon_eel": "Murène ruban bleue",
-		"tuna": "Tuna",
+		"tuna": "Thon",
 		"blue_marlin": "Marlin Bleu",
 		"giant_trevally": "Carangue grosse tête",
 		"mahi-mahi": "Mahi-mahi",

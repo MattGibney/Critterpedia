@@ -27,23 +27,23 @@
     <div class="row no-gutters">
       <div class="col pr-1">
         <div class="btn-group d-flex" role="group">
-          <button type="button" class="btn btn-outline-secondary w-100 {{if (eq critterTime "month") "active"}}" {{action "changeCritterTime" "month"}} >{{t (concat "month." currentTime.month)}}</button>
+          <button type="button" class="btn btn-outline-secondary w-100 {{if (eq critterTime "month") "active"}}" {{action "changeCritterTime" "month"}} >{{t (concat "month." currentTime.month ".long")}}</button>
           <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split {{if (eq critterTime "month") "active"}}" data-toggle="dropdown">
             <span class="sr-only">{{t "toggleDropdown"}}</span>
           </button>
           <div class="dropdown-menu">
-            <button class="dropdown-item" type="button" {{action "changeMonth" "0"}}>{{t "month.0"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "1"}}>{{t "month.1"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "2"}}>{{t "month.2"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "3"}}>{{t "month.3"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "4"}}>{{t "month.4"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "5"}}>{{t "month.5"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "6"}}>{{t "month.6"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "7"}}>{{t "month.7"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "8"}}>{{t "month.8"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "9"}}>{{t "month.9"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "10"}}>{{t "month.10"}}</button>
-            <button class="dropdown-item" type="button" {{action "changeMonth" "11"}}>{{t "month.11"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "0"}}>{{t "month.0.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "1"}}>{{t "month.1.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "2"}}>{{t "month.2.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "3"}}>{{t "month.3.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "4"}}>{{t "month.4.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "5"}}>{{t "month.5.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "6"}}>{{t "month.6.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "7"}}>{{t "month.7.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "8"}}>{{t "month.8.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "9"}}>{{t "month.9.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "10"}}>{{t "month.10.long"}}</button>
+            <button class="dropdown-item" type="button" {{action "changeMonth" "11"}}>{{t "month.11.long"}}</button>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ module('Integration | Component | critter-table-row', function(hooks) {
     await render(hbs`{{critter-table-row critter=critter currentTime=currentTime hemisphere="northern"}}`);
 
     assert.equal(this.element.querySelector('tr:first-child>td:nth-child(1)').textContent.trim(), 't:critterData.test_critter:()');
-    assert.equal(this.element.querySelector('tr:first-child>td:nth-child(2)').textContent.trim(), 'River');
+    assert.equal(this.element.querySelector('tr:first-child>td:nth-child(2)').textContent.trim(), 't:location.River:()');
     assert.equal(this.element.querySelector('tr:first-child>td:nth-child(3)').textContent.trim(), '1,000');
     assert.equal(this.element.querySelector('tr:first-child>td:nth-child(4)').textContent.trim(), 'All Day');
 
