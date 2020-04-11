@@ -2,6 +2,10 @@
 
 {{head-layout}}
 
+{{#if settings.darkMode}}
+  {{set-body-class "dark-mode-support"}}
+{{/if}}
+
 <div class="content">
   {{outlet}}
 </div>
