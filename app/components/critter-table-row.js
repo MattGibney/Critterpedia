@@ -18,9 +18,7 @@ export default Component.extend({
     }
 
     if(!this.get('critter.months')[this.get('hemisphere')].includes(nextMonth)) {
-      if(this.get('currentTime.day') > 15) {
-        return true;
-      }
+      return true;
     }
     return false;
   }),
@@ -32,9 +30,7 @@ export default Component.extend({
     }
 
     if(!this.get('critter.months')[this.get('hemisphere')].includes(nextMonth)) {
-      if(this.get('currentTime.day') <= 15) {
-        return true;
-      }
+      return true;
     }
     return false;
   })

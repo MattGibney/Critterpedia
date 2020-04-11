@@ -23,11 +23,22 @@ $theme-colors: (
   background-color: $gray-200;
   border-radius: 50% !important;
   border: .4rem solid $gray-400;
-  transform: scale(.8);
+  transform: scale(.8) rotate(45deg);
+}
+
+.critter-incoming {
+  border-top-color: theme-color("info");
+  border-right-color: theme-color("info");
+}
+
+.critter-expiring {
+  border-left-color: theme-color("warning");
+  border-bottom-color: theme-color("warning");
 }
 
 .critter-list-icon {
   width: 128px;
+  transform: rotate(-45deg);
 
   &:after {
     content: "";
