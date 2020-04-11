@@ -54,15 +54,10 @@ module('Integration | Component | critter-table-row', function(hooks) {
     this.set('critter', mockCritter);
 
     const mockCurrentTime = EmberObject.create({
-      month: 2,
-      day: 15
+      month: 2
     })
     this.set('currentTime', mockCurrentTime);
 
-    await render(hbs`{{critter-table-row critter=critter currentTime=currentTime hemisphere="northern"}}`);
-    assert.equal(this.element.querySelectorAll('tr').length, 1);
-
-    mockCurrentTime.set('day', 16);
     await render(hbs`{{critter-table-row critter=critter currentTime=currentTime hemisphere="northern"}}`);
     assert.equal(this.element.querySelectorAll('tr').length, 2);
     assert.equal(this.element.querySelector('tr:last-child>td').textContent.trim(), 'This critter is not available next month!');
@@ -80,18 +75,12 @@ module('Integration | Component | critter-table-row', function(hooks) {
     this.set('critter', mockCritter);
 
     const mockCurrentTime = EmberObject.create({
-      month: 1,
-      day: 15
+      month: 1
     })
     this.set('currentTime', mockCurrentTime);
 
     await render(hbs`{{critter-table-row critter=critter currentTime=currentTime hemisphere="northern"}}`);
     assert.equal(this.element.querySelectorAll('tr').length, 2);
     assert.equal(this.element.querySelector('tr:last-child>td').textContent.trim(), 'This critter is newly available this month!');
-
-    mockCurrentTime.set('day', 16);
-
-    await render(hbs`{{critter-table-row critter=critter currentTime=currentTime hemisphere="northern"}}`);
-    assert.equal(this.element.querySelectorAll('tr').length, 1);
   });
 });

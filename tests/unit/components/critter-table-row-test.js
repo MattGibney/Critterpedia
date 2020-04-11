@@ -20,8 +20,7 @@ module('Unit | Component | critter-table-row', function(hooks) {
 
   test('Computed: expiresSoon', function(assert) {
     const currentTimeMock = EmberObject.create({
-      month: 1,
-      day: 15
+      month: 1
     });
     let component = this.owner.factoryFor('component:critter-table-row').create({
       critter: EmberObject.create({
@@ -37,14 +36,6 @@ module('Unit | Component | critter-table-row', function(hooks) {
     // Northern hemisphere, critter available next month
     assert.equal(component.get('expiresSoon'), false);
 
-    // Northern hemisphere, critter not available next month but beginning of month
-    currentTimeMock.set('month', 2);
-    assert.equal(component.get('expiresSoon'), false);
-
-    // Northern hemisphere, critter not available next month towards end of month of month
-    currentTimeMock.set('day', 16);
-    assert.equal(component.get('expiresSoon'), true);
-
     // Southern hemisphere, critter not available next month, end of year
     currentTimeMock.set('month', 11);
     component.set('hemisphere', 'southern');
@@ -57,8 +48,7 @@ module('Unit | Component | critter-table-row', function(hooks) {
 
   test('Computed: newCritter', function(assert) {
     const currentTimeMock = EmberObject.create({
-      month: 1,
-      day: 15
+      month: 1
     });
     let component = this.owner.factoryFor('component:critter-table-row').create({
       critter: EmberObject.create({
@@ -76,11 +66,6 @@ module('Unit | Component | critter-table-row', function(hooks) {
 
     // Northern hemisphere, critter was available last month
     currentTimeMock.set('month', 2);
-    assert.equal(component.get('newCritter'), false);
-
-    // Northern hemisphere, critter not available last month towards end of month of month
-    currentTimeMock.set('day', 16);
-    currentTimeMock.set('month', 1);
     assert.equal(component.get('newCritter'), false);
 
     // Southern hemisphere, critter was available last month, beginning of year
