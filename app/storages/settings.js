@@ -8,7 +8,7 @@ Storage.reopenClass({
       hemisphere: 'northern',
       flickPrices: false,
       language: 'en-us',
-      viewMode: 'list'
+      viewMode: 'grid'
     };
   }
 });
