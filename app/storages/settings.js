@@ -9,7 +9,7 @@ Storage.reopenClass({
       flickPrices: false,
       language: 'en-us',
       viewMode: 'grid',
-      darkMode: true
+      darkMode: false
     };
   }
 });
