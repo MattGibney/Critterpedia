@@ -15,15 +15,9 @@ export default Controller.extend({
   sortBy: 'name',
   sortDir: 'asc',
 
-  // viewMode: 'list', // list/grid
-
   init() {
     this._super(...arguments);
     this.set('date', new Date());
-
-    // setInterval(() => {
-    //   this.set('date', new Date());
-    // }, 500);
   },
 
   currentTime: computed('date', 'monthOverride', function() {
@@ -47,7 +41,6 @@ export default Controller.extend({
 
       if(f.months[this.get('settings.hemisphere')].includes(this.get('currentTime.month'))) {
         if(!f.time || this.get('critterTime') === 'month') {
-          // No time restriction means all day
           return true;
         }
 
