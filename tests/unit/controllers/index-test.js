@@ -5,7 +5,6 @@ import EmberObject from '@ember/object';
 module('Unit | Controller | index', function(hooks) {
   setupTest(hooks);
 
-  // Replace this with your real tests.
   test('Computed: availableCritters in Month', function(assert) {
     const mockModel = [
       {
@@ -175,5 +174,72 @@ module('Unit | Controller | index', function(hooks) {
       mockTime.set('hour', test.hour);
       assert.equal(controller.get('availableCritters.length'), test.shouldBe, `${test.hour} should be ${test.shouldBe}`);
     });
+  });
+
+  test('Computed: currentTime', function(assert) {
+    let controller = this.owner.lookup('controller:index');
+
+    controller.set('date', new Date('01-01-1970'))
+    
+    assert.deepEqual(
+      controller.get('currentTime'),
+      {
+        day: 1,
+        hour: 0,
+        month: 0
+      }
+    );
+
+    controller.set('monthOverride', '10');
+
+    assert.deepEqual(
+      controller.get('currentTime'),
+      {
+        day: 1,
+        hour: 0,
+        month: 10
+      }
+    );
+  });
+
+  test('Computed: sortedCritters', function(assert) {
+    let controller = this.owner.lookup('controller:index');
+
+    controller.set('sortBy', 'id');
+
+    controller.set('availableCritters', [
+      { id: 4 },
+      { id: 2 },
+      { id: 3 },
+      { id: 1 }
+    ]);
+
+    assert.deepEqual(
+      controller.get('sortedCritters'),
+      [
+        { id: 1 },
+        { id: 2 },
+        { id: 3 },
+        { id: 4 }
+      ]
+    );
+
+    controller.set('sortDir', 'desc');
+
+    assert.deepEqual(
+      controller.get('sortedCritters'),
+      [
+        { id: 4 },
+        { id: 3 },
+        { id: 2 },
+        { id: 1 }
+      ]
+    );
+  });
+
+  test('Action: changeCritterType', function(assert) {
+    let controller = this.owner.lookup('controller:index');
+
+    assert.ok(!!controller);
   });
 });
