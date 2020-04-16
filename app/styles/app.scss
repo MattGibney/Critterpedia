@@ -122,65 +122,63 @@ h1 {
 }
 
 
-@media (prefers-color-scheme: dark) {
-  .dark-mode-support {
-    & {
-      background-color: $gray-800;
+.dark-mode {
+  & {
+    background-color: $gray-800;
+    color: $gray-200;
+  }
+
+  table {
+    tbody {
+      border-top-color: $gray-700 !important;
+    }
+    th {
+      border-bottom-color: $gray-700 !important;
+    }
+    th,td {
       color: $gray-200;
+      border-top-color: $gray-700 !important;
     }
+  }
+  .dropdown-menu {
+    background-color: $gray-600;
+    .dropdown-item {
+      color: $gray-200
+    }
+  }
 
-    table {
-      tbody {
-        border-top-color: $gray-700 !important;
-      }
-      th {
-        border-bottom-color: $gray-700 !important;
-      }
-      th,td {
-        color: $gray-200;
-        border-top-color: $gray-700 !important;
-      }
-    }
-    .dropdown-menu {
-      background-color: $gray-600;
-      .dropdown-item {
-        color: $gray-200
-      }
-    }
+  .page-heading {
+    color: $gray-800;
+  }
 
-    .page-heading {
-      color: $gray-800;
-    }
+  .alert {
+    opacity: .8;
+  }
 
-    .alert {
-      opacity: .8;
-    }
+  .bg-ac {
+    background-image: url('/assets/new-horisons-dark.png');
+    background-color: $gray-900;
+    opacity: .9;
+  }
 
-    .bg-ac {
-      background-image: url('/assets/new-horisons-dark.png');
-      background-color: $gray-900;
-      opacity: .9;
-    }
+  .critter-icon-container {
+    background-color: $gray-800;
+    border-color: $gray-700;
+  }
 
-    .critter-icon-container {
-      background-color: $gray-800;
-      border-color: $gray-700;
-    }
+  .active-time-chart .time-row td.active {
+    background-color: rgba(#CABF00, .8);
+  }
+  .active-month-chart td .active {
+    background-color: rgba(#CABF00, .8);
+  }
 
-    .active-time-chart .time-row td.active {
-      background-color: rgba(#CABF00, .8);
+  .footer {
+    .colour-twitter {
+      color: $gray-700 !important;
     }
-    .active-month-chart td .active {
-      background-color: rgba(#CABF00, .8);
-    }
-
-    .footer {
-      .colour-twitter {
-        color: $gray-700 !important;
-      }
-      a {
-        color: $gray-800 !important;
-      }
+    a {
+      color: $gray-800 !important;
     }
   }
 }

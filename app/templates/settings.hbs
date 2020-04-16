@@ -23,11 +23,14 @@
       </select>
     </div>
 
-    {{!-- TODO: On-Off Dark Mode --}}
+    <div class="custom-control custom-switch mb-2">
+      {{input type="checkbox" class="custom-control-input" id="flickPrices" checked=settings.flickPrices}}
+      <label class="custom-control-label" for="flickPrices">{{t "settings.flickPrices"}}</label>
+    </div>
 
     <div class="custom-control custom-switch">
-      {{input type="checkbox" class="custom-control-input" id="customSwitch1" checked=settings.flickPrices}}
-      <label class="custom-control-label" for="customSwitch1">{{t "settings.flickPrices"}}</label>
+      {{input type="checkbox" class="custom-control-input" id="darkMode" checked=settings.darkMode}}
+      <label class="custom-control-label" for="darkMode">{{t "settings.darkMode"}}</label>
     </div>
 
   </form>
