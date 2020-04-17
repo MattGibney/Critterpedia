@@ -658,7 +658,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         isRare: false,
         name: 'jewel_beetle',
         price: 2400,
-        location: 'on_trees',
+        location: 'tree_stumps',
         months: {
           northern: [3, 4, 5, 6, 7],
           southern: [9, 10, 11, 0, 1]
