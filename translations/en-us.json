@@ -94,11 +94,13 @@
     "dataPoint": {
       "location": "Location",
       "price": "Price",
-      "frequency": "Apperance Frequency"
+      "frequency": "Apperance Frequency",
+      "shadowSize": "Shadow Size"
     },
     "rareCritter": "Rare, it may be more difficult to catch than normal.",
     "commonCritter": "Common, you should have no trouble catching these.",
     "activeHours": "Active Hours",
+    "shadowSizeImages": "Shadow Size Images",
     "activeTime": {
       "12am": "12am",
       "12pm": "12pm",
@@ -133,6 +135,17 @@
     "sea": "Sea",
     "sea_rain": "Sea (Rain)",
     "pier": "Pier"
+  },
+  "shadowSize": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "narrow": "Narrow",
+    "4fin": "4 (With fin)",
+    "6fin": "6 (With fin)"
   },
   "critterData": {
     "common_butterfly": "Common Butterfly",
@@ -300,5 +313,31 @@
     "en-us": "English",
     "es": "Español",
 		"fr-FR": "Français"
+  },
+  "altText": {
+    "shadowSizeImage": {
+      "high": {
+        "1": "Shadow Size 1 from a High Camera Angle",
+        "2": "Shadow Size 2 from a High Camera Angle",
+        "3": "Shadow Size 3 from a High Camera Angle",
+        "4": "Shadow Size 4 from a High Camera Angle",
+        "5": "Shadow Size 5 from a High Camera Angle",
+        "6": "Shadow Size 6 from a High Camera Angle",
+        "narrow": "Narrow Shadow Size from a High Camera Angle",
+        "4fin": "Shadow Size 4 (With fin) from a High Camera Angle",
+        "6fin": "Shadow Size 6 (With fin) from a High Camera Angle"
+      },
+      "low": {
+        "1": "Shadow Size 1 from a Low Camera Angle",
+        "2": "Shadow Size 2 from a Low Camera Angle",
+        "3": "Shadow Size 3 from a Low Camera Angle",
+        "4": "Shadow Size 4 from a Low Camera Angle",
+        "5": "Shadow Size 5 from a Low Camera Angle",
+        "6": "Shadow Size 6 from a Low Camera Angle",
+        "narrow": "Narrow Shadow Size from a Low Camera Angle",
+        "4fin": "Shadow Size 4 (With fin) from a Low Camera Angle",
+        "6fin": "Shadow Size 6 (With fin) from a Low Camera Angle"
+      }
+    }
   }
 }
