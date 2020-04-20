@@ -6,7 +6,7 @@ import { storageFor } from 'ember-local-storage';
 export default Route.extend(AnalyticsRouteMixin, {
   intl: service(),
   settings: storageFor('settings'),
-  
+
   beforeModel() {
     this._super(...arguments);
     return this.intl.setLocale([this.get('settings.language')]);
@@ -1134,7 +1134,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [10, 11, 0, 1, 2],
           southern: [4, 5, 6, 7, 8]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1149,7 +1150,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1160,7 +1162,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1175,7 +1178,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1186,7 +1190,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1201,7 +1206,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1212,7 +1218,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1227,7 +1234,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1242,7 +1250,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1253,7 +1262,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7],
           southern: [9, 10, 11, 0, 1]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1264,7 +1274,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8],
           southern: [9, 10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1279,7 +1290,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [7, 8],
           southern: [1, 2]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1294,7 +1306,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8, 9],
           southern: [9, 10, 11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1305,7 +1318,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [2, 3, 4, 5, 6],
           southern: [8, 9, 10, 11, 0]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1316,7 +1330,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7],
           southern: [10, 11, 0, 1]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1331,7 +1346,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1342,7 +1358,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [2, 3, 4],
           southern: [8, 9, 10]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1357,7 +1374,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8, 9],
           southern: [10, 11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1372,7 +1390,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7],
           southern: [11, 0, 1]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1387,7 +1406,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1398,7 +1418,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [9, 10, 11, 0, 1, 2],
           southern: [3, 4, 5, 6, 7, 8]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1409,7 +1430,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1420,7 +1442,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8, 9],
           southern: [11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1431,7 +1454,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [8, 9, 10, 11],
           southern: [2, 3, 4, 5]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -1442,7 +1466,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [11, 0, 1],
           southern: [5, 6, 7]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1453,7 +1478,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1468,7 +1494,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [2, 3, 4, 5, 8, 9, 10],
           southern: [2, 3, 4, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1483,7 +1510,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [2, 3, 4, 5, 8, 9, 10],
           southern: [8, 9, 10, 11, 2, 3, 4]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1498,7 +1526,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [2, 3, 4, 8, 9, 10],
           southern: [8, 9, 10, 2, 3, 4]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1513,7 +1542,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [11, 0, 1, 2],
           southern: [5, 6, 7, 8]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -1524,7 +1554,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [8],
           southern: [2]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1535,7 +1566,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [8],
           southern: [2]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -1550,7 +1582,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [8, 9, 10],
           southern: [2, 3, 4]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1565,7 +1598,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8, 9, 10],
           southern: [9, 10, 0, 1, 2, 3, 4]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1580,7 +1614,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8],
           southern: [10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1595,7 +1630,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8, 9],
           southern: [10, 11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1610,7 +1646,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8, 9],
           southern: [10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1625,7 +1662,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8, 9, 10],
           southern: [9, 10, 11, 0, 1, 2, 3, 4]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1640,7 +1678,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8, 9],
           southern: [10, 11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1655,7 +1694,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1670,7 +1710,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1685,7 +1726,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -1700,7 +1742,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -1715,7 +1758,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -1730,7 +1774,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1741,7 +1786,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [8, 9, 10, 11, 0, 1, 2],
           southern: [2, 3, 4, 5, 6, 7, 8]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -1752,7 +1798,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [11, 0, 1, 2],
           southern: [5, 6, 7, 8]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1763,7 +1810,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8, 9, 10],
           southern: [9, 10, 0, 1, 2, 3, 4]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1774,7 +1822,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8],
           southern: [9, 10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "1"
       },
       {
         type: 'fish',
@@ -1785,7 +1834,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8],
           southern: [9, 10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1796,7 +1846,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8],
           southern: [9, 10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1811,7 +1862,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [6, 7],
           southern: [0, 1]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -1822,7 +1874,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [3, 4, 5, 6, 7, 8, 9, 10],
           southern: [9, 10, 11, 0, 1, 2, 3, 4]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1837,7 +1890,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [10, 11, 0, 1],
           southern: [4, 5, 6, 7]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1848,7 +1902,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [6, 7, 8],
           southern: [0, 1, 2]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1863,7 +1918,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1874,7 +1930,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -1885,7 +1942,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [2, 3, 4, 5, 6, 7, 8, 9, 10],
           southern: [8, 9, 10, 11, 0, 1, 2, 3, 4]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1896,7 +1954,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -1907,7 +1966,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -1918,7 +1978,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [9, 10, 11, 0, 1, 2, 3],
           southern: [7, 8, 9]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1929,7 +1990,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -1940,7 +2002,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [11, 0, 1, 2, 3, 4, 5, 6, 7],
           southern: [5, 6, 7, 8, 9, 10, 11, 0, 1]
-        }
+        },
+        shadowSize: "3"
       },
       {
         type: 'fish',
@@ -1951,7 +2014,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [7, 8, 9],
           southern: [1, 2, 3]
-        }
+        },
+        shadowSize: "narrow"
       },
       {
         type: 'fish',
@@ -1962,7 +2026,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8, 9],
           southern: [11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "narrow"
       },
       {
         type: 'fish',
@@ -1973,7 +2038,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [10, 11, 0, 1, 2, 3],
           southern: [4, 5, 6, 7, 8, 9]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -1984,7 +2050,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [10, 11, 0, 1, 2, 3, 6, 7, 8],
           southern: [0, 1, 2, 4, 5, 6, 7, 8, 9]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -1995,7 +2062,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8],
           southern: [10, 11, 0, 1, 2]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -2006,7 +2074,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [4, 5, 6, 7, 8, 9],
           southern: [10, 11, 0, 1, 2, 3]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -2021,7 +2090,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [6, 7, 8],
           southern: [0, 1, 2]
-        }
+        },
+        shadowSize: "6fin"
       },
       {
         type: 'fish',
@@ -2036,7 +2106,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [7, 8, 9, 10],
           southern: [1, 2, 3, 4]
-        }
+        },
+        shadowSize: "5"
       },
       {
         type: 'fish',
@@ -2051,7 +2122,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "6fin"
       },
       {
         type: 'fish',
@@ -2066,7 +2138,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "6fin"
       },
       {
         type: 'fish',
@@ -2081,7 +2154,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "6fin"
       },
       {
         type: 'fish',
@@ -2092,7 +2166,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "6fin"
       },
       {
         type: 'fish',
@@ -2103,7 +2178,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
-        }
+        },
+        shadowSize: "4fin"
       },
       {
         type: 'fish',
@@ -2118,7 +2194,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [10, 11, 0, 1, 2],
           southern: [4, 5, 6, 7, 8]
-        }
+        },
+        shadowSize: "4"
       },
       {
         type: 'fish',
@@ -2129,7 +2206,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [11, 0, 1, 2, 3, 4],
           southern: [5, 6, 7, 8, 9, 10]
-        }
+        },
+        shadowSize: "6"
       },
       {
         type: 'fish',
@@ -2144,7 +2222,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "2"
       },
       {
         type: 'fish',
@@ -2155,7 +2234,8 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-        }
+        },
+        shadowSize: "6"
       }
     ];
   }
