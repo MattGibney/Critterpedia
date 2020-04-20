@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div class="container-fluid mt-4">
+<div class="container-fluid pt-4 pb-4">
   <div class="row">
     <div class="col-12 col-sm-6">
       <table class="table table-borderless">
@@ -30,6 +30,12 @@
             {{/if}}
           </td>
         </tr>
+        {{#if (eq model.type "fish")}}
+          <tr>
+            <td>{{t "critter.dataPoint.shadowSize"}}</td>
+            <td class="font-weight-bold">{{t (concat "shadowSize." model.shadowSize)}}</td>
+          </tr>
+        {{/if}}
       </table>
     </div>
     <div class="col-12 col-sm-6">
@@ -64,6 +70,20 @@
           </tr>
         {{/each}}
       </table>
+
+      {{#if (eq model.type "fish")}}
+        <h4 class="mt-5">{{t "critter.shadowSizeImages"}}</h4>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <img class="img-fluid" src={{concat "/assets/shadowSizeImage/high-" model.shadowSize ".png"}} alt={{t (concat "altText.shadowSizeImage.high." model.shadowSize)}}>
+            </div>
+            <div class="col-12 col-sm-6">
+              <img class="img-fluid" src={{concat "/assets/shadowSizeImage/low-" model.shadowSize ".png"}} alt={{t (concat "altText.shadowSizeImage.low." model.shadowSize)}}>
+            </div>
+          </div>
+        </div>
+      {{/if}}
     </div>
   </div>
 
