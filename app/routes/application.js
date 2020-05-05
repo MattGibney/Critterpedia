@@ -115,7 +115,7 @@ export default Route.extend(AnalyticsRouteMixin, {
         location: 'flying',
         time: {
           start: '04',
-          end: '07'
+          end: '19'
         },
         months: {
           northern: [4, 5, 6, 7],
