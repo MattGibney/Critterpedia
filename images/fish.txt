@@ -1,0 +1,485 @@
+.fish-sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.fish-sprite-NH-Icon-anchovy {
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+
+.fish-sprite-NH-Icon-angelfish {
+    width: 128px;
+    height: 128px;
+    background-position: -128px 0;
+}
+
+.fish-sprite-NH-Icon-arapaima {
+    width: 128px;
+    height: 128px;
+    background-position: -256px 0;
+}
+
+.fish-sprite-NH-Icon-arowana {
+    width: 128px;
+    height: 128px;
+    background-position: -384px 0;
+}
+
+.fish-sprite-NH-Icon-barredknifejaw {
+    width: 128px;
+    height: 128px;
+    background-position: -512px 0;
+}
+
+.fish-sprite-NH-Icon-barreleye {
+    width: 128px;
+    height: 128px;
+    background-position: -640px 0;
+}
+
+.fish-sprite-NH-Icon-betta {
+    width: 128px;
+    height: 128px;
+    background-position: -768px 0;
+}
+
+.fish-sprite-NH-Icon-bitterling {
+    width: 128px;
+    height: 128px;
+    background-position: -896px 0;
+}
+
+.fish-sprite-NH-Icon-blackbass {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -128px;
+}
+
+.fish-sprite-NH-Icon-blowfish {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -128px;
+}
+
+.fish-sprite-NH-Icon-bluegill {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -128px;
+}
+
+.fish-sprite-NH-Icon-bluemarlin {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -128px;
+}
+
+.fish-sprite-NH-Icon-butterflyfish {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -128px;
+}
+
+.fish-sprite-NH-Icon-carp {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -128px;
+}
+
+.fish-sprite-NH-Icon-catfish {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -128px;
+}
+
+.fish-sprite-NH-Icon-char {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -128px;
+}
+
+.fish-sprite-NH-Icon-cherrysalmon {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -256px;
+}
+
+.fish-sprite-NH-Icon-clownfish {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -256px;
+}
+
+.fish-sprite-NH-Icon-coelacanth {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -256px;
+}
+
+.fish-sprite-NH-Icon-crawfish {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -256px;
+}
+
+.fish-sprite-NH-Icon-cruciancarp {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -256px;
+}
+
+.fish-sprite-NH-Icon-dab {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -256px;
+}
+
+.fish-sprite-NH-Icon-dace {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -256px;
+}
+
+.fish-sprite-NH-Icon-dorado {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -256px;
+}
+
+.fish-sprite-NH-Icon-footballfish {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -384px;
+}
+
+.fish-sprite-NH-Icon-freshwatergoby {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -384px;
+}
+
+.fish-sprite-NH-Icon-frog {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -384px;
+}
+
+.fish-sprite-NH-Icon-gar {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -384px;
+}
+
+.fish-sprite-NH-Icon-giantsnakehead {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -384px;
+}
+
+.fish-sprite-NH-Icon-gianttrevally {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -384px;
+}
+
+.fish-sprite-NH-Icon-goldentrout {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -384px;
+}
+
+.fish-sprite-NH-Icon-goldfish {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -384px;
+}
+
+.fish-sprite-NH-Icon-greatwhiteshark {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -512px;
+}
+
+.fish-sprite-NH-Icon-guppy {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -512px;
+}
+
+.fish-sprite-NH-Icon-hammerheadshark {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -512px;
+}
+
+.fish-sprite-NH-Icon-horsemackerel {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -512px;
+}
+
+.fish-sprite-NH-Icon-killifish {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -512px;
+}
+
+.fish-sprite-NH-Icon-kingsalmon {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -512px;
+}
+
+.fish-sprite-NH-Icon-koi {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -512px;
+}
+
+.fish-sprite-NH-Icon-loach {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -512px;
+}
+
+.fish-sprite-NH-Icon-mahimahi {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -640px;
+}
+
+.fish-sprite-NH-Icon-mittencrab {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -640px;
+}
+
+.fish-sprite-NH-Icon-morayeel {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -640px;
+}
+
+.fish-sprite-NH-Icon-napoleonfish {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -640px;
+}
+
+.fish-sprite-NH-Icon-neontetra {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -640px;
+}
+
+.fish-sprite-NH-Icon-nibblefish {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -640px;
+}
+
+.fish-sprite-NH-Icon-oarfish {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -640px;
+}
+
+.fish-sprite-NH-Icon-oceansunfish {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -640px;
+}
+
+.fish-sprite-NH-Icon-oliveflounder {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -768px;
+}
+
+.fish-sprite-NH-Icon-palechub {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -768px;
+}
+
+.fish-sprite-NH-Icon-pike {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -768px;
+}
+
+.fish-sprite-NH-Icon-piranha {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -768px;
+}
+
+.fish-sprite-NH-Icon-pondsmelt {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -768px;
+}
+
+.fish-sprite-NH-Icon-popeyedgoldfish {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -768px;
+}
+
+.fish-sprite-NH-Icon-pufferfish {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -768px;
+}
+
+.fish-sprite-NH-Icon-rainbowfish {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -768px;
+}
+
+.fish-sprite-NH-Icon-ranchugoldfish {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -896px;
+}
+
+.fish-sprite-NH-Icon-ray {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -896px;
+}
+
+.fish-sprite-NH-Icon-redsnapper {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -896px;
+}
+
+.fish-sprite-NH-Icon-ribboneel {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -896px;
+}
+
+.fish-sprite-NH-Icon-saddledbichir {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -896px;
+}
+
+.fish-sprite-NH-Icon-salmon {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -896px;
+}
+
+.fish-sprite-NH-Icon-sawshark {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -896px;
+}
+
+.fish-sprite-NH-Icon-seabass {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -896px;
+}
+
+.fish-sprite-NH-Icon-seabutterfly {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px 0;
+}
+
+.fish-sprite-NH-Icon-seahorse {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -128px;
+}
+
+.fish-sprite-NH-Icon-snappingturtle {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -256px;
+}
+
+.fish-sprite-NH-Icon-softshelledturtle {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -384px;
+}
+
+.fish-sprite-NH-Icon-squid {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -512px;
+}
+
+.fish-sprite-NH-Icon-stringfish {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -640px;
+}
+
+.fish-sprite-NH-Icon-sturgeon {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -768px;
+}
+
+.fish-sprite-NH-Icon-suckerfish {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -896px;
+}
+
+.fish-sprite-NH-Icon-surgeonfish {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -1024px;
+}
+
+.fish-sprite-NH-Icon-sweetfish {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -1024px;
+}
+
+.fish-sprite-NH-Icon-tadpole {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -1024px;
+}
+
+.fish-sprite-NH-Icon-tilapia {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -1024px;
+}
+
+.fish-sprite-NH-Icon-tuna {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -1024px;
+}
+
+.fish-sprite-NH-Icon-whaleshark {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -1024px;
+}
+
+.fish-sprite-NH-Icon-yellowperch {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -1024px;
+}
+
+.fish-sprite-NH-Icon-zebraturkeyfish {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -1024px;
+}
