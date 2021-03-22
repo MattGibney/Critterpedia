@@ -2,7 +2,7 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const ENV = require('./config/environment')(EmberApp.env());
 
-module.exports = function (defaults) {
+module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     'ember-cli-favicon': {
       enabled: ENV.environment != 'test', // By default favicons are NOT generated in TEST env to speedup builds
