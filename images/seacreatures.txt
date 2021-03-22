@@ -1,0 +1,245 @@
+.seacreature-sprite {
+    background-image: url(spritesheet.png)
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.seacreature-sprite-NH-Icon-abalone {
+    width: 128px;
+    height: 128px;
+    background-position: 0 0;
+}
+
+.seacreature-sprite-NH-Icon-acornbarnacle {
+    width: 128px;
+    height: 128px;
+    background-position: -128px 0;
+}
+
+.seacreature-sprite-NH-Icon-chamberednautilus {
+    width: 128px;
+    height: 128px;
+    background-position: -256px 0;
+}
+
+.seacreature-sprite-NH-Icon-dungenesscrab {
+    width: 128px;
+    height: 128px;
+    background-position: -384px 0;
+}
+
+.seacreature-sprite-NH-Icon-fireflysquid {
+    width: 128px;
+    height: 128px;
+    background-position: -512px 0;
+}
+
+.seacreature-sprite-NH-Icon-flatworm {
+    width: 128px;
+    height: 128px;
+    background-position: -640px 0;
+}
+
+.seacreature-sprite-NH-Icon-gazamicrab {
+    width: 128px;
+    height: 128px;
+    background-position: -768px 0;
+}
+
+.seacreature-sprite-NH-Icon-giantisopod {
+    width: 128px;
+    height: 128px;
+    background-position: -896px 0;
+}
+
+.seacreature-sprite-NH-Icon-gigasgiantclam {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px 0;
+}
+
+.seacreature-sprite-NH-Icon-horseshoecrab {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -128px;
+}
+
+.seacreature-sprite-NH-Icon-lobster {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -128px;
+}
+
+.seacreature-sprite-NH-Icon-mantisshrimp {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -128px;
+}
+
+.seacreature-sprite-NH-Icon-moonjellyfish {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -128px;
+}
+
+.seacreature-sprite-NH-Icon-mussel {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -128px;
+}
+
+.seacreature-sprite-NH-Icon-octopus {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -128px;
+}
+
+.seacreature-sprite-NH-Icon-oyster {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -128px;
+}
+
+.seacreature-sprite-NH-Icon-pearloyster {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -128px;
+}
+
+.seacreature-sprite-NH-Icon-redkingcrab {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -128px;
+}
+
+.seacreature-sprite-NH-Icon-scallop {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -256px;
+}
+
+.seacreature-sprite-NH-Icon-seaanemone {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seacucumber {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seagrapes {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seapig {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seapineapple {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seaslug {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seastar {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seaurchin {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -256px;
+}
+
+.seacreature-sprite-NH-Icon-seaweed {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -384px;
+}
+
+.seacreature-sprite-NH-Icon-slatepencilurchin {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -384px;
+}
+
+.seacreature-sprite-NH-Icon-snowcrab {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -384px;
+}
+
+.seacreature-sprite-NH-Icon-spidercrab {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -384px;
+}
+
+.seacreature-sprite-NH-Icon-spinylobster {
+    width: 128px;
+    height: 128px;
+    background-position: -512px -384px;
+}
+
+.seacreature-sprite-NH-Icon-spottedgardeneel {
+    width: 128px;
+    height: 128px;
+    background-position: -640px -384px;
+}
+
+.seacreature-sprite-NH-Icon-sweetshrimp {
+    width: 128px;
+    height: 128px;
+    background-position: -768px -384px;
+}
+
+.seacreature-sprite-NH-Icon-tigerprawn {
+    width: 128px;
+    height: 128px;
+    background-position: -896px -384px;
+}
+
+.seacreature-sprite-NH-Icon-turbanshell {
+    width: 128px;
+    height: 128px;
+    background-position: -1024px -384px;
+}
+
+.seacreature-sprite-NH-Icon-umbrellaoctopus {
+    width: 128px;
+    height: 128px;
+    background-position: 0 -512px;
+}
+
+.seacreature-sprite-NH-Icon-vampiresquid {
+    width: 128px;
+    height: 128px;
+    background-position: -128px -512px;
+}
+
+.seacreature-sprite-NH-Icon-venusflowerbasket {
+    width: 128px;
+    height: 128px;
+    background-position: -256px -512px;
+}
+
+.seacreature-sprite-NH-Icon-whelk {
+    width: 128px;
+    height: 128px;
+    background-position: -384px -512px;
+}

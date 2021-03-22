@@ -78,8 +78,10 @@ export default Controller.extend({
 
       if(type === 'fish') {
         analytics.logEvent("view_fish");
-      } else {
+      } else if(type === 'insect') {
         analytics.logEvent("view_insects");
+      } else {
+        analytics.logEvent("view_seacreatures");
       }
       return this.set('critterType', type);
     },

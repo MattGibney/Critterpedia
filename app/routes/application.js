@@ -6,7 +6,7 @@ import { storageFor } from 'ember-local-storage';
 export default Route.extend(AnalyticsRouteMixin, {
   intl: service(),
   settings: storageFor('settings'),
-  
+
   beforeModel() {
     this._super(...arguments);
     return this.intl.setLocale([this.get('settings.language')]);
@@ -458,6 +458,7 @@ export default Route.extend(AnalyticsRouteMixin, {
           start: '16',
           end: '19'
         },
+        // TODO: need a second time slot of 04 - 08
         months: {
           northern: [6, 7],
           southern: [0, 1]
@@ -938,6 +939,7 @@ export default Route.extend(AnalyticsRouteMixin, {
           start: '17',
           end: '19'
         },
+        // TODO: need a second time slot of 04 - 08
         months: {
           northern: [6, 7, 8, 9, 10],
           southern: [0, 1, 2, 3, 4]
@@ -1652,6 +1654,7 @@ export default Route.extend(AnalyticsRouteMixin, {
           start: '09',
           end: '16'
         },
+        // TODO: need a second time slot of 21 - 04
         months: {
           northern: [5, 6, 7, 8],
           southern: [11, 0, 1, 2]
@@ -2155,6 +2158,499 @@ export default Route.extend(AnalyticsRouteMixin, {
         months: {
           northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
           southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'seaweed',
+        price: 600,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 9, 10, 11],
+          southern: [0, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_grapes',
+        price: 900,
+        location: 'sea',
+        months: {
+          northern: [5, 6, 7, 8],
+          southern: [0, 1, 2, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_cucumber',
+        price: 500,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 10, 11],
+          southern: [4, 5, 6, 7, 8, 9]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'sea_pig',
+        price: 10000,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [0, 1, 10, 11],
+          southern: [4, 5, 6, 7]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_star',
+        price: 500,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_urchin',
+        price: 1700,
+        location: 'sea',
+        months: {
+          northern: [4, 5, 6, 7, 8],
+          southern: [0, 1, 2, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'slate_pencil_urchin',
+        price: 2000,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [4, 5, 6, 7, 8],
+          southern: [0, 1, 2, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_anemone',
+        price: 500,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'moon_jellyfish',
+        price: 600,
+        location: 'sea',
+        months: {
+          northern: [6, 7, 8],
+          southern: [0, 1, 2]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_slug',
+        price: 600,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'pearl_oyster',
+        price: 2800,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'mussel',
+        price: 1500,
+        location: 'sea',
+        months: {
+          northern: [5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'oyster',
+        price: 1100,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 8, 9, 10, 11],
+          southern: [2, 3, 4, 5, 6, 7]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'scallop',
+        price: 1200,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'whelk',
+        price: 1000,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'turban_shell',
+        price: 1000,
+        location: 'sea',
+        months: {
+          northern: [2, 3, 4, 8, 9, 10, 11],
+          southern: [2, 3, 4, 5, 8, 9, 10]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'abalone',
+        price: 2000,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [0, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'gigas_giant_clam',
+        price: 15000,
+        location: 'sea',
+        months: {
+          northern: [4, 5, 6, 7, 8],
+          southern: [0, 1, 2, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'chambered_nautilus',
+        price: 1800,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [4, 5, 6, 7, 8],
+          southern: [0, 1, 2, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'octopus',
+        price: 1200,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'umbrella_octopus',
+        price: 6000,
+        location: 'sea',
+        months: {
+          northern: [2, 3, 4, 8, 9, 10],
+          southern: [2, 3, 4, 8, 9, 10]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'vampire_squid',
+        price: 10000,
+        location: 'sea',
+        months: {
+          northern: [4, 5, 6, 7],
+          southern: [0, 1, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'firefly_squid',
+        price: 1400,
+        location: 'sea',
+        time: {
+          start: '21',
+          end: '04'
+        },
+        months: {
+          northern: [2, 3, 4, 5],
+          southern: [8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'gazami_crab',
+        price: 2200,
+        location: 'sea',
+        months: {
+          northern: [5, 6, 7, 8, 9, 10],
+          southern: [0, 1, 2, 3, 4, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'dungeness_crab',
+        price: 1900,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 10, 11],
+          southern: [4, 5, 6, 7, 8, 9, 10]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'snow_crab',
+        price: 6000,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 10, 11],
+          southern: [4, 5, 6, 7, 8, 9]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'red_king_crab',
+        price: 8000,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 10, 11],
+          southern: [4, 5, 6, 7, 8]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'acorn_barnacle',
+        price: 600,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'spider_crab',
+        price: 12000,
+        location: 'sea',
+        months: {
+          northern: [2, 3],
+          southern: [8, 9]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'tiger_prawn',
+        price: 3000,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [5, 6, 7, 8],
+          southern: [0, 1, 2, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sweet_shrimp',
+        price: 1400,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [0, 1, 8, 9, 10, 11],
+          southern: [2, 3, 4, 5, 6, 7]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'mantis_shrimp',
+        price: 2500,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+          southern: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'spiny_lobster',
+        price: 5000,
+        location: 'sea',
+        time: {
+          start: '21',
+          end: '04'
+        },
+        months: {
+          northern: [9, 10, 11],
+          southern: [3, 4, 5]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'lobster',
+        price: 4500,
+        location: 'sea',
+        months: {
+          northern: [0, 3, 4, 5, 11],
+          southern: [5, 6, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'giant_isopod',
+        price: 12000,
+        location: 'sea',
+        time: {
+          start: '09',
+          end: '16'
+        },
+        // TODO: need a second time slot of 21 - 04
+        months: {
+          northern: [6, 7, 8, 9],
+          southern: [0, 1, 2, 3]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'horseshoe_crab',
+        price: 2500,
+        location: 'sea',
+        time: {
+          start: '21',
+          end: '04'
+        },
+        months: {
+          northern: [6, 7, 8],
+          southern: [0, 1, 2]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'sea_pineapple',
+        price: 1500,
+        location: 'sea',
+        months: {
+          northern: [3, 4, 5, 6, 7],
+          southern: [0, 1, 9, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'spotted_garden_eel',
+        price: 1100,
+        location: 'sea',
+        time: {
+          start: '04',
+          end: '21'
+        },
+        months: {
+          northern: [4, 5, 6, 7, 8, 9],
+          southern: [0, 1, 2, 3, 10, 11]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: false,
+        name: 'flatworm',
+        price: 700,
+        location: 'sea',
+        time: {
+          start: '16',
+          end: '09'
+        },
+        months: {
+          northern: [7, 8],
+          southern: [1, 2]
+        }
+      },
+      {
+        type: 'seacreature',
+        isRare: true,
+        name: 'venus_flower_basket',
+        price: 5000,
+        location: 'sea',
+        months: {
+          northern: [0, 1, 9, 10, 11],
+          southern: [3, 4, 5, 6, 7]
         }
       }
     ];
