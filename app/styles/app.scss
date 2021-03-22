@@ -186,11 +186,11 @@ h1 {
 
 
 .critter-incoming {
-  border-top-color: theme-color("info");
-  border-right-color: theme-color("info");
+  border-top-color: theme-color("info") !important;
+  border-right-color: theme-color("info") !important;
 }
 
 .critter-expiring {
-  border-left-color: theme-color("warning");
-  border-bottom-color: theme-color("warning");
+  border-left-color: theme-color("warning") !important;
+  border-bottom-color: theme-color("warning") !important;
 }
