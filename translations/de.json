@@ -89,7 +89,11 @@
     "flickPrices": "Zeig Flick und C.J. Preise",
     "darkMode": "Dunkler Modus",
     "thankYou": "Vielen Dank für das Benutzen meiner Seite. Ich bin dankbar für Anregungen und Verbesserungsvorschläge. Zögert nicht michüber Twitter zu kontaktieren und diese Seite mit euren Freunden zu teilen.",
-    "translations": "<strong>Kannst du mehrere Sprachen?</strong> Ich möchte diese Seite in viele verschiedenen Sprachen übersetzen. Wenn du daran interressiert bist mir zu helfen, schreib mich gerne an!"
+    "translations": "<strong>Kannst du mehrere Sprachen?</strong> Ich möchte diese Seite in viele verschiedenen Sprachen übersetzen. Wenn du daran interressiert bist mir zu helfen, schreib mich gerne an!",
+    "contributorsHeading": "Mitwirkende",
+    "contributorsThankyou": "Ich möchte den folgenden Personen für ihre Beiträge ein besonderes Dankeschön aussprechen!",
+    "translatorsHeading": "Übersetzungen",
+    "featuresHeading": "Eigenschaften"
   },
   "critter": {
     "dataPoint": {

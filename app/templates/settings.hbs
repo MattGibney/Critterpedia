@@ -36,18 +36,32 @@
   </form>
 </div>
 
-<hr class="my-5">
+<hr class="mt-5 mb-3">
 
 <div class="container-fluid">
   <p>{{t "settings.thankYou"}}</p>
   <div class="alert alert-info">
     {{t "settings.translations" htmlSafe=true}}
   </div>
+</div>
+
+<hr class="my-3">
+
+<div class="container-fluid">
+  <h4>{{t "settings.contributorsHeading"}}</h4>
+  <p>{{t "settings.contributorsThankyou"}}</p>
+
+  <h5>{{t "settings.translatorsHeading"}}</h5>
   {{!-- template-lint-disable no-bare-strings --}}
   <ul class="list-unstyled pb-3">
     <li>{{t "language.es"}} - <a href="https://twitter.com/Mespeth_" target="_blank" rel="noopener">@Mespeth_</a></li>
     <li>{{t "language.fr-FR"}} - <a href="https://github.com/Ekaekale" target="_blank" rel="noopener">Ekaekale</a></li>
     <li>{{t "language.de"}} - <a href="https://twitter.com/Nuros15" target="_blank" rel="noopener">Nuros</a></li>
+  </ul>
+
+  <h5>{{t "settings.featuresHeading"}}</h5>
+  <ul class="list-unstyled pb-3">
+    <li> Sea Creatures - <a href="https://github.com/mrpants" target="_blank" rel="noopener">Michael Schwartz</a></li>
   </ul>
 </div>
 

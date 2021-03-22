@@ -89,7 +89,11 @@
 		"flickPrices": "Montrez les prix de Djason et Pollux",
 		"darkMode": "Mode sombre",
 		"thankYou": "Merci beaucoup d'utiliser mon site. Si vous avez des commentaires ou des suggestions d'amélioration, j'apprécierai. N'hésitez pas à me contacter sur twitter et à partager avec vos amis.",
-		"translations": "<strong>Êtes-vous multi-lingue?</strong>J'aimerais traduire cette application pour qu'elle puisse être utilisée dans différentes langues. Si vous souhaitez contribuer à rendre cette application multilingue, n'hésitez pas à me contacter!"
+		"translations": "<strong>Êtes-vous multi-lingue?</strong>J'aimerais traduire cette application pour qu'elle puisse être utilisée dans différentes langues. Si vous souhaitez contribuer à rendre cette application multilingue, n'hésitez pas à me contacter!",
+    "contributorsHeading": "Contributeurs",
+    "contributorsThankyou": "J'aimerais partager un merci spécial aux personnes suivantes pour leurs contributions!",
+    "translatorsHeading": "Traductions",
+    "featuresHeading": "Fonctionnalités"
 	},
 	"critter": {
 		"dataPoint": {

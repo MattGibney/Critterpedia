@@ -89,7 +89,11 @@
     "flickPrices": "Mostrar los precios de Kamilo y CJ",
     "darkMode": "Modo oscuro",
     "thankYou": "Muchas gracias por usar mi página. Si tienes alguna opinión o sugerencia para mejorarla lo apreciaría. Por favor, no dudes en contactar conmigo en Twitter y compartir esto con tus amigos.",
-    "translations": "<strong> ¿Eres políglota? </strong> Me gustaría traducir esta app a varios idiomas. Si estás interesado/a en ayudarme a hacer esto posible, ¡por favor contacta conmigo!"
+    "translations": "<strong> ¿Eres políglota? </strong> Me gustaría traducir esta app a varios idiomas. Si estás interesado/a en ayudarme a hacer esto posible, ¡por favor contacta conmigo!",
+    "contributorsHeading": "Colaboradores",
+    "contributorsThankyou": "¡Me gustaría compartir un agradecimiento especial a las siguientes personas por sus contribuciones!",
+    "translatorsHeading": "Traducciones",
+    "featuresHeading": "Características"
   },
   "critter": {
     "dataPoint": {
