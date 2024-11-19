@@ -62,7 +62,7 @@
     "emberfire": "^3.0.0-rc.6",
     "eslint-plugin-ember": "^6.2.0",
     "eslint-plugin-node": "^9.0.1",
-    "firebase": "^7.17.2",
+    "firebase": "^10.9.0",
     "loader.js": "^4.7.0",
     "popper.js": "^1.16.1",
     "qunit-dom": "^0.8.4",
